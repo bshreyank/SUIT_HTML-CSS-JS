@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1" width="100%" cellspacing="0" style="table-layout: fixed;">
+
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+        </tr>
+
+        <!-- rowspan- to merge current row to the next row
+                       affects to the next row
+        -->
+
+        <tr>
+            <td colspan="2" bgcolor="pink" rowspan="2">1</td>
+            <td colspan="2">2</td>
+            <td colspan="2">3</td>
+            <td colspan="2">4</td>
+            <td colspan="2">5</td>
+        </tr>
+
+        <tr>
+            <!-- first and second td taken by above row i.e 31 line -->
+
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td colspan="5">1</td>
+            <td colspan="5">2</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">1</td>
+            <td colspan="4">2 </td>
+            <td colspan="2" bgcolor="orange" rowspan="3">3</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">1</td>
+            <td colspan="4">2</td>
+        </tr>
+
+
+        <tr>
+            <td colspan="8">1</td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" rowspan="2">1</td>
+            <td colspan="2" rowspan="2">2</td>
+            <td colspan="2" rowspan="2">3</td>
+            <td colspan="2" rowspan="2">4</td>
+            <td colspan="2" rowspan="2">5</td>
+        </tr>
+
+        <tr>
+
+            <!-- 10 columns acquired  by above row -->
+        </tr>
+
+
+        <!-- ********************************************************** -->
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td bgcolor="red">
+                <!-- ********************************************************************************************************** -->
+                <table border="1" cellspacing="0" width="100%" cellpadding="0">
+
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">1</td>
+                        <td colspan="3">2</td>
+
+                    </tr>
+                    <td colspan="2">1</td>
+                    <td colspan="2">1</td>
+                    <td colspan="2">1</td>
+
+                    <tr>
+
+                    </tr>
+                </table>
+
+            </td>
+            <!-- ********************************************************************************************************** -->
+
+
+        </tr>
+
+
+        <!-- ********************************************************** -->
+
+
+
+        <tr>
+            <td colspan="5">
+
+                  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4" bgcolor="violet"></td>
+                    </tr>
+
+                    <tr>
+
+                    </tr>
+                  </table>
+
+
+            </td>
+            <td colspan="5">2</td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+</html>
