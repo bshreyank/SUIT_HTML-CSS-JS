@@ -1,50 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nested Div</title>
+    <title>Document</title>
+
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        * {
+            margin: 0px;
+            padding: 0px;
         }
-        .top-div-bar{
-            float: left;
-            height: 200px;
+
+        .container {
+            height: 100px;
             width: 100%;
+            float: left;
             background-color: aqua;
         }
-        .second-div-back{
-            float: left;
-            height:200px;
-            width:50%;
-            background-color:red;
-        }
 
-        .four-component{
-            float: left;
-            height: 50%;
+        .div_box_1 {
+            height: 100px;
             width: 50%;
+            float: left;
+            background-color: blueviolet;
+
         }
-        
+
+        .div_box_2 {
+            height: 100px;
+            width: 50%;
+            float: left;
+            background-color: aquamarine;
+        }
+
+        .div_box_01 {
+            /* height:100px; */
+            height: 100%;
+            width: 50%;
+            float: left;
+            background-color: black;
+        }
+
+
+        .div_box_02 {
+            height: 100%;
+            width: 50%;
+            float: left;
+            background-color: yellowgreen;
+        }
     </style>
-
 </head>
-<body>
-    <div class="top-div-bar"></div>
 
-    <div class="second-div-back">
-        
-        <div class="four-component" style="background-color: brown ;">
+<body>
+
+    <!-- nested div -->
+
+    <div class="container"></div>
+
+
+
+    <!-- 2 partitions -->
+    <div class="div_box_1">
+
+        <!-- nested div -->
+
+        <div class="div_box_01">
+            <!-- nested div -->
+            <div style="height:50%;width:50%;float: left;background-color: brown;"></div>
+            <div style="height:50%;width:50%;float: left;background-color: rgb(46, 39, 39);"></div>
+            <div style="height:50%;width:50%;float: left;background-color: rgb(44, 30, 88);"></div>
+            <div style="height:50%;width:50%;float: left;background-color: rgb(223, 166, 166);"></div>
+
         </div>
-        <div class="four-component" style="background-color: black;"></div>
-        <div class="four-component" style="background-color: indigo;"></div>
-        <div class="four-component" style="background-color: pink;"></div>
-        
-        
+
+
+
+        <div class="div_box_02"></div>
+
     </div>
+
+
+
+
+    <div class="div_box_2">
+
+        <div style="height:33.33%;width:50%;float: left;background-color: rgb(104, 104, 72);"></div>
+        <div style="height:33.33%;width:50%;float: left;background: orangered;"></div>
+
+        <div style="height:33.33%;width:33.33%;float: left;background-color: indigo;"></div>
+        <div style="height:33.33%;width:33.33%;float: left;background-color: rgb(147, 138, 153);"></div>
+        <div style="height:33.33%;width:33.33%;float: left;background-color: rgb(25, 17, 30);"></div>
+
+
+        <div style="height:33.33%;float: left;width:25%;background-color: tomato;"></div>
+        <div style="height:33.33%;float: left;width:25%;background-color: rgb(115, 90, 86);"></div>
+        <div style="height:33.33%;float: left;width:25%;background-color: rgb(88, 52, 45);"></div>
+        <div style="height:33.33%;float: left;width:25%;background-color: rgb(176, 136, 128);"></div>
+
+
+    </div>
+
+
+
 </body>
+
 </html>
