@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/index.php" method="get/post">
+        <!-- Form - helps to get data from users 
+        
+            URL Decoding =>
+
+                Protocol - helps to communicate bt front end and backend 
+
+                > https://  ==  Network Protocol. (Hyper Text Transfer Protocol)
+                    SSL - Secure Sockets Layer
+                > www.amazon.in  ==  Domain Name
+                
+                > /dp/B0BY8JZ22K  == path or Search
+                
+                ?ie=UTF8
+                
+                > Variables: 
+                    &pf_rd_r=GN19B3A7P4DV7WY3GSXC
+                    &pf_rd_p=f9b21fd0-f4b0-4df8-8ed7-1a63a309f7ce
+                    &pd_rd_r=6b56e4a7-bdb2-4752-b239-61ca27eff400
+                    &ref_=tile1_OPCE3Lite
+                    &pd_rd_w=ABJYL&pd_rd_wg=YQrF9
+
+
+                *****************************************************************************************
+
+                https://
+                www.google.com/
+                
+                search
+                ?q=html+forms&oq=html+forms  == query
+                
+                &aqs=edge..69i57j0i512l7j69i60.1877j0j1
+                &sourceid=chrome
+                &ie=UTF-8
+
+        -->
+        <fieldset> <!-- Gives a field and sets data in a border  -->
+            <legend>Personal Details</legend>
+            <label for="f_name">Enter Your First Name:</label>
+            <input type="text" name="f_name" id="f_name" readonly>
+            <br><br>
+            
+            <label for="user_email">Enter Email:</label>
+            <input type="emai" name="user_email" id="user_email"><br><br>
+            
+            <label for="user_password">Password:</label>
+            <input type="password" name="user_pass" id="user_pass" required autofocus> <br><br>
+
+            <label for="user_phone">Phone:</label>
+            <input type="number" name="user_number" id="user_pass" required><br><br>
+
+            <label for="user_date">Book Appointment:</label>
+            <input type="date" name="" id=""><br><br>
+
+            <label for="">Book Time:</label>
+            <input type="time" name="" id=""><br><br>
+
+            <label for="">Range:</label>
+            <input type="range" name="" id=""><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gender" value="Male">Male
+            <input type="radio" name="gender" id="gender" value="Female">Female
+            <input type="radio" name="gender" id="gender" value="Prefer not to Say">Prefer not to Say
+
+            <br><br>
+
+            <label for="">Color:</label>
+            <input type="color" name="" id=""><br><br>
+
+            <label for="">Search:</label>
+            <input type="search" name="" id=""> <br><br>
+
+            <label for="">Upload Files:</label>
+            <input type="file" name="" id="" multiple><br><br>
+            <!-- multiple - is to select Multiple files to upload -->
+
+            <label for="hidden_data">Hidden Data:</label>
+            <input type="hidden" name="secure_id" id=""><br><br>
+
+
+            <!-- Select Multiple Options -->
+            <label for="">Select Courses:</label>
+            <input type="checkbox" name="courses" id="courses" value="Frontend Skills">HTML
+            <input type="checkbox" name="courses" id="courses" value="Frontend Skills">CSS
+            <input type="checkbox" name="courses" id="courses" value="Frontend Skills">REACTJS
+            <input type="checkbox" name="courses" id="courses" value="Frontend Skills">ANGULAR
+            <input type="checkbox" name="courses" id="courses" value="Frontend Skills">MUI
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Details:</legend>
+            <!-- Select Only 1 Option -->
+            <label for="">Education:</label>
+            <select name="education" id="education">
+                <option value="Select">Select</option>
+                <option value="BCS/BCA">BCA/BCS</option>
+                <option value="BE/BTECH">BE/BTECH</option>
+                <option value="ME/MTECH">ME/MTECH</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+
+            <!-- *************************************** -->
+
+            <label for="">Select Your Technology Stack</label>
+            <br><br>
+            <select name="" id="">
+                <optgroup label="FrontEnd Technology">
+                    <option value="">Select</option>
+                    <option value="ReactJS">ReactJS</option>
+                    <option value="Angular">Angular</option>
+                </optgroup>
+                
+                <optgroup label="BackEnd Technology">
+                    <option value="">Select</option>
+                    <option value="ReactJS">ReactJS</option>
+                    <option value="Angular">Angular</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <!-- Long msg or address -->
+            <label for="">Send MSG or Address:</label><br>
+            <textarea name="" id="" rows="5" style="width:100%"></textarea>
+            <br><br>
+            <!-- **************************************************************** -->
+
+            <!-- When Submit the form -->
+            <input type="submit" name="" id="" value="Save Form">
+            <button type="submit">Save Form</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
