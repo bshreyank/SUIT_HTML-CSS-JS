@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 - CSS</title>
+
+    <style>
+      * {
+        /*margin: 0;
+                  padding: 0;*/
+        box-sizing: border-box; /*keep always*/
+      }
+
+      div {
+        border: solid 5px orange;
+
+        /* box-sizing: remove outside border and adjust into inside box*/
+        /* box-sizing: content-box (by default)*/
+
+        box-sizing: border-box;
+
+        /* Box Model */
+        /* Margin - Gives outside spacing */
+        /* Padding - Gives inside spacing */
+
+        background-color: blue;
+        height: 400px;
+        width: 25%;
+
+        float: left;
+        /*margin: auto;*/ /*this will put your div in center*/
+      }
+
+      .margin_box {
+        height: 300px;
+        width: 300px;
+        background-color: yellowgreen;
+
+        /*All side margin*/
+        margin: 50px;
+
+        /*Margin: T-B, R-L*/
+        /* margin:Y-axis,X-axis:*/
+        margin: 50px 100px;
+        /* margin:T,R-L, B */
+        margin: 30px 130px 230px;
+        /* T,R, B, L*/
+        margin: 10px 50px 100px 200px;
+        /*padding: inside spacing */
+        /* inside all side spacing*/
+        padding: 20px;
+      }
+
+      /*
+            COLOR:
+
+            /* HSL -
+                  hue=> 0-360
+
+                  0 or 360 - red
+                  120- blue
+                  240-green
+                  
+                  saturation-grey color - 0-100%
+                  lightness-0-100% - 0-50%-black
+                                     50-100%- white
+                  /* background-color: hs1(hue, saturation,lightness);
+                  /* background-color: hs1 (240, 0%, 07) ;
+                  /* background-color: hsla(hue, saturation, lightness, alpha);
+            */
+    </style>
+  </head>
+  <body>
+    <div class="margin_box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sapiente
+      vero deserunt earum nisi minus dolor vitae enim quisquam, saepe atque
+      exercitationem mollitia. Exercitationem voluptatibus quae sit, voluptas
+      corporis voluptate?
+    </div>
+  </body>
+</html>
