@@ -1,118 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A2Z NEWS</title>
 
-    <!-- ************************************************************* -->
-    <!-- ************************************************************* -->
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      
-      .logo {
-        float: left;
-        font-size: 30px;
-        padding: 20px;
-        width: 20%;
-        height: 75px;
-        background-color:#10409f ;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A2Z NEWS</title>
 
-      }
+  <!-- ************************************************************* -->
+  <!-- ************************************************************* -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-      
-/***********************************************************/
-      .vertical_navbar {
-        height: 75px;
-        width: 80%;
-        float: left;
-        background-color: #10409f;
-      }
+    .logo {
+      float: left;
+      font-size: 30px;
+      padding: 20px;
+      width: 20%;
+      height: 75px;
+      background-color: #10409f;
+    }
 
-      .vertical_navbar li {
-        display: inline-block;
-        margin-left: 30px;
-        margin-top: 30px;
-        font-family: "Amazon Ember", Arial, sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 15px;
-      }
-
-      .vertical_navbar li a {
-        text-decoration: none;
-        color: aliceblue;
-        background-color: black;
-        padding: 10px;
-        border-radius: 40px;
-      }
     /***********************************************************/
-      .horizontal_navbar{
-        height:670px;
-        width: 17%;
-        float: left;
-        background-color: #10409f;
-      }
+    .vertical_navbar {
+      height: 75px;
+      width: 80%;
+      float: left;
+      background-color: #10409f;
+    }
 
-      .horizontal_navbar li {
-        display: inline-block; /* removes bullet points*/
-        margin-left: 30px;
-        margin-top: 50px;
-        font-family: "Amazon Ember", Arial, sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 15px;
-        
-      }
+    .vertical_navbar li {
+      display: inline-block;
+      margin-left: 30px;
+      margin-top: 30px;
+      font-family: "Amazon Ember", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 15px;
+    }
 
-      .horizontal_navbar li a {
-        text-decoration: none;
-        color: aliceblue;
-        background-color: black;
-        padding: 10px 30px;
-        border-radius: 40px;
-      }
+    .vertical_navbar li a {
+      text-decoration: none;
+      color: aliceblue;
+      background-color: black;
+      padding: 10px;
+      border-radius: 40px;
+    }
 
-    </style>
+    /***********************************************************/
+    .horizontal_navbar {
+      /*height:670px; */
+      height: 89.8vh;
+      width: 20%;
+      float: left;
+      background-color: #10409f;
+      /*background-color: brown;*/
+    }
 
-    <!-- ************************************************************* -->
-    <!-- ************************************************************* -->
-  </head>
-  <body>
-    <div class="container">
+    .horizontal_navbar li {
+      display: inline-block;
+      /* removes bullet points*/
+      margin-left: 30px;
+      margin-top: 50px;
+      font-family: "Amazon Ember", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
 
-      <div class="logo">
-        <h4>A2Z NEWS</h4>
+    .horizontal_navbar li a {
+      text-decoration: none;
+      color: aliceblue;
+      background-color: black;
+      padding: 10px 30px;
+      border-radius: 40px;
+    }
+
+    /***********************************************************/
+
+    .form {
+      margin-top: 50px;
+      margin-left: 50px;
+      font-size: 20px;
+    }
+  </style>
+
+  <!-- ************************************************************* -->
+  <!-- ************************************************************* -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <h3>A2Z NEWS</h3>
     </div>
 
-      <div class="vertical_navbar">
-        <ul>
-          <li><a href="#">LOKMAT</a></li>
-          <li><a href="#">SAMANA</a></li>
-          <li><a href="#">SAKAL</a></li>
-          <li><a href="#">LOKSATTA</a></li>
-          <li><a href="#">MH TIMES</a></li>
-          <li><a href="#">ZUNJAR NETA</a></li>
-        </ul>
+    <div class="vertical_navbar">
+      <ul>
+        <li><a href="#">LOKMAT</a></li>
+        <li><a href="#">SAMANA</a></li>
+        <li><a href="#">SAKAL</a></li>
+        <li><a href="#">LOKSATTA</a></li>
+        <li><a href="#">MH TIMES</a></li>
+        <li><a href="#">ZUNJAR NETA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="horizontal_navbar">
+    <ul>
+      <li><a href="#">LOKMAT</a></li>
+      <li><a href="#">SAMANA</a></li>
+      <br />
+      <li><a href="#">SAKAL</a></li>
+      <li><a href="#">LOKSATTA</a></li>
+      <li><a href="#">MH TIMES</a></li>
+      <br />
+      <li><a href="#">ZUNJAR NETA</a></li>
+    </ul>
+  </div>
+
+  <div style="height: 50px; width: 10%; background-color: red; float: left">
+    <h2 style="margin-top: 12px; margin-left: 40px">NEWS</h2>
+  </div>
+
+  <div style="height: 50px; width: 70%; background-color: black; float: left">
+    <marquee behavior="left" direction="">
+      <h2 style="margin: 10px; color: yellow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis
+        explicabo sunt ipsum quam obcaecati animi cupiditate, quaerat
+        laudantium quis adipisci ducimus hic praesentium quae iusto delectus
+        eveniet illum illo
+      </h2>
+    </marquee>
+  </div>
+
+  <div style="height: 620px; width: 80%; background-color: green; float: left">
+    <div style="height: 100%; width: 80%; background-color: red; float: left">
+      <div style="
+            height: 50%;
+            width: 33.33%;
+            background-color: green;
+            float: left;
+            border-style: inset;
+          "></div>
+      <div style="
+            height: 50%;
+            width: 33.33%;
+            background-color: green;
+            float: left;
+            border-style: inset;
+          "></div>
+      <div style="
+            height: 50%;
+            width: 33.33%;
+            background-color: green;
+            float: left;
+            border-style: inset;
+          "></div>
+      <div style="
+            height: 50%;
+            width: 33.33%;
+            background-color: green;
+            float: left;
+            border-style: inset;
+          "></div>
+      <div style="
+            height: 50%;
+            width: 33.33%;
+            background-color: green;
+            float: left;
+            border-style: inset;
+          "></div>
+      <div style="
+            height: 50%;
+            width: 33.33%;
+            background-color: green;
+            float: left;
+            border-style: inset;
+          "></div>
+    </div>
+    <div style="height: 620px; width: 20%; background-color: grey; float: left">
+      <h1 style="margin-top: 20px; margin-left: 50px; color: orange">
+        JOIN NOW
+      </h1>
+
+      <div class="form">
+        <label for="f_name">Name:</label>
+        <input type="text" name="f_name" id="f_name" placeholder="Enter your Name" />
+        <br /><br />
+        <br /><br />
+        <label for="user_email">Enter Email:</label>
+        <input type="emai" name="user_email" id="user_email" placeholder="Enter your Email" />
+        <br /><br />
+        <br /><br />
+        <label for="user_phone">Phone:</label>
+        <input type="number" name="user_number" id="user_pass" placeholder="Enter your Mobile Number" />
+        <br /><br />
       </div>
     </div>
-      <div class="horizontal_navbar">
-        <ul>
-          <li><a href="#">LOKMAT</a></li>
-          <li><a href="#">SAMANA</a></li><br>
-          <li><a href="#">SAKAL</a></li>
-          <li><a href="#">LOKSATTA</a></li>
-          <li><a href="#">MH TIMES</a></li><br>
-          <li><a href="#">ZUNJAR NETA</a></li>
-        </ul>
-      </div>
+  </div>
+</body>
 
-      <div style="height: 50px; width:7%; background-color:red;float:left">NEWS</div>
-    
-  </body>
 </html>
