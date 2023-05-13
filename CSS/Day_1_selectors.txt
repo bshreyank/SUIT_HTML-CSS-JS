@@ -1,0 +1,192 @@
+CSS_ cascading style sheet- CSS3
+
+
+
+purpose to desgin and styling our web appilcation
+
+beautify
+makeup
+
+
+*********************************************************************************
+
+
+Selectors-
+         fetch html elements for styling purpose and more work
+
+
+
+Types Selectors-
+
+
+1.Simple selectors-
+            class s- . symbol - we can used multiple times
+            id s- # symbol - must be unique
+
+            named/tag selector- table,div, img, body, html,li,ul..........
+
+
+<style>
+    . {}
+
+    #{
+
+    }
+
+    ul li {}
+
+    li {}
+
+    img {}
+
+
+
+</style>
+
+<!-- ********************************************************************************************************** -->
+
+2. combinator selectors-
+
+            1. Descendent selector- spacing - select all html elements which are inside into specfied elements
+<!-- 
+
+
+<div>
+    <p></p>
+    <p></p>
+</div>
+
+<p></p>
+<p></p>
+ -->
+
+<style>
+
+    /* div p{
+        color:pink;
+    }
+
+    ul li{
+
+    } */
+        
+
+    ****************************************************************
+  2.child selector-  
+
+                            >  symbol
+                            select all the html elements which are childrens of specfied elements
+
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+            <p></p>
+            <p></p>
+            <p></p>
+
+            *************************************************************
+
+
+3.General sibling selector-    ~  (tilde symbol)-  select all the html elements which are siblings of specfied elements
+
+
+   <div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+            <p></p>
+            <p></p>
+            <p></p>
+
+
+            ********************************************************************************************8
+   
+
+4. Adjcent sibling sel- + symbol-   select html element which are direct siblings/immediate sibling of specfied elements
+
+
+     <div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+            <p></p>
+            <p></p>
+            <p></p>
+   
+
+
+
+            *********************************************************************************
+
+
+         3.  Universal Selector-    * symbol -   apply styling to whole html documents -    body or html {}
+
+                    *{
+                        background-color: orangered;
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+       
+
+
+                    ****************************************************************/
+
+            4. pseduo classes s-  : colon symbol-
+            
+                  hover, link,visited,active,focus, first-child,last-child,nth-child(5), nth-child(even/odd),first-of-type,last-of-type
+
+    
+                    ****************************************************************/
+
+          5.pseduo elements s-   :: symbol-     ::selection  eg p::selection{} ,  before and  after,first-line,last-line
+
+
+     
+
+    
+*******************************************************************************************
+Box Model- 
+
+
+everthing in a html is a box
+it can be inline level or block level
+it contains- margin,padding ,border
+
+
+*********************************************
+ 3 Ways  to write-
+
+
+ inline- style attribute
+ internal-   <head>  <style></style> </head>
+
+
+ external css-   style.css 
+
+
+
+
+**************************************
+
+
+html- tags
+
+
+CSS_
+property_name:property_value;
+
+border-radius
+
+
+
+
+</style>
+
+
+

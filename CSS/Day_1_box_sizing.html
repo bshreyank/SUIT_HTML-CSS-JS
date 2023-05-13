@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        div {
+
+            border: solid 5px orange;
+
+            /* box-sizing:remove outside border and adjust into inside box*/
+
+            /* box-sizing:content-box(by default); */
+
+            box-sizing: border-box;
+
+
+            /* box model */
+            /* margin: gives outside spacing */
+            /* padding: gives inside spacing */
+        }
+
+
+        .margin_box {
+            height: 300px;
+            width: 300px;
+            background-color: yellowgreen;
+            float: left;
+
+            /* all side margin */
+            margin: 50px;
+
+
+            /* margin:T-B,R-L: */
+            /* margin:Y-axis,X-axis: */
+            margin: 50px 100px;
+
+
+            /* margin:T,R-L,B */
+            margin: 30px 130px 230px;
+
+            /* T,R,B,L */
+            margin: 10px 50px 100px 200px;
+
+
+            /* padding:inside spacing */
+
+            /* inside all side spacing */
+            padding: 20px;
+
+            /*  padding:T-B (Y-Axis),  R-L (X-Axis)*/
+            padding: 20px 40px;
+
+            /* padding:T,R-L,B */
+            padding: 10px 40px 100px;
+
+
+            /* padding:T,R,B,L */
+            padding: 10px 40px 100px 20px;
+
+            text-align: justify;
+
+
+
+
+            /* color */
+
+            /* color name */
+            color: aqua;
+
+            /* color hex code */
+            /* color:#rrggbb; */
+            /* color:black  */
+            color: #000000;
+
+            /* white */
+            color: #ffffff;
+
+
+
+            /* rgb */
+
+            /* background-color: rgb(0-255,0-255,0-255); */
+            background-color: rgb(120, 122, 255);
+
+
+
+            /* rgba */
+            /* alpha-  brightness effect from, faint to dark 
+            0.1-1
+            */
+            background-color: rgba(red, green, blue, alpha);
+
+
+
+            /* hsl
+            hue-0-360
+                
+            0 or 360-  red
+            120- blue
+            240-green
+
+
+
+            saturation-grey color - 0-100%
+
+            lightness-0-100% - 0-50%-  black
+                               50-100%- white
+            
+            */
+            /* background-color: hsl(hue, saturation, lightness); */
+            /* background-color: hsl(240,0%,0%); */
+
+            /* background-color: hsla(hue, saturation, lightness, alpha); */
+
+
+
+            
+            
+
+
+
+
+
+        }
+
+        .margin_box_2 {
+            height: 300px;
+            width: 300px;
+            /* background-color:rgb(120,120,160); */
+            /* background-color: rgba(0, 0, 0, 1); */
+
+            /* background-color: hsl(240,60%,40%,0.5); */
+            background-color: #CBDDFC;
+            float: left;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="height:200px;width:25%;float: left;background-color:red ;"></div>
+    <div style="height:200px;width:25%;float: left;background-color: indigo;"></div>
+    <div style="height:200px;width:25%;float: left;background-color: violet;"></div>
+    <div style="height:200px;width:25%;float: left;background-color:orangered ;"></div>
+
+
+    <hr>
+    <br>
+    <hr>
+    <br>
+    <hr><br><br>
+
+
+    <div class="margin_box">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rem officiis quo voluptatum distinctio quos
+        tempore optio exercitationem consequuntur dolore eos, eligendi qui facere assumenda nostrum! Aspernatur dolore
+        tenetur eos?
+        sit amet consectetur adipisicing elit. Quisquam rem officiis quo voluptatum distinctio quos
+        tempore optio exercitationem consequuntur dolore eos, el
+    </div>
+    <div class="margin_box_2"></div>
+
+
+
+</body>
+
+<!-- </html> -->
