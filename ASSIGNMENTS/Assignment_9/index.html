@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-9</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /*****************************************************/
+      .top-bar {
+        height: 70px;
+        width: 100%;
+        float: left;
+      }
+      .top-bar li {
+        display: inline-block;
+        margin: 15px 15px; /*Top-Bottom , Right-Left*/
+
+        padding: 10px;
+
+        font-family: "Amazon Ember", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+
+        text-align: center;
+      }
+
+      .top-bar li a {
+        text-decoration: none;
+        color: black;
+        background-color: pink;
+        padding: 12px 27px;
+        margin-left: 15px;
+      }
+      /*****************************************************/
+      .marqueeTag {
+        height: 70px;
+        width: 100%;
+        float: left;
+        background-color: aqua;
+      }
+      /*****************************************************/
+      .blogSegment{
+        height: 500px;
+        width: 100%;
+        float: left;
+        background-color: red;
+      }
+      .blogSegmentInside{
+        height: 500px;
+        width: 24.6%;
+        float: left;
+        background-color: yellow;
+        margin-left: 5px;
+      }
+      /*****************************************************/
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact US</a></li>
+      </ul>
+    </div>
+    <!-- ********************************************************************************** -->
+    <div class="marqueeTag">
+      <marquee behavior="left" direction="">
+        <h2 style="margin: 20px; color: red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis
+        explicabo sunt ipsum quam obcaecati animi cupiditate, quaerat
+        laudantium quis adipisci ducimus hic praesentium quae iusto delectus
+        eveniet illum illo
+      </h2>
+      </marquee>
+    </div>
+    <!-- ********************************************************************************** -->
+
+    <div class="blogSegment">
+        <div class="blogSegmentInside"></div>
+        <div class="blogSegmentInside"></div>
+        <div class="blogSegmentInside"></div>
+        <div class="blogSegmentInside"></div>
+    </div>
+
+    <!-- ********************************************************************************** -->
+    <!-- ********************************************************************************** -->
+  </body>
+</html>
