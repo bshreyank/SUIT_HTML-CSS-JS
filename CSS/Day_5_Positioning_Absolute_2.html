@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Absolute</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .abs_box_1 {
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            /*float: left;*/
+
+            /*Positioning in CSS - Relative*/
+            position: relative;
+             /*right:140px; */
+             top:20px;
+             left:140px;
+        }
+
+        .abs_box_2{
+            height:300px;
+            width:300px;
+            /*float: left;*/
+            background-color: aquamarine;
+
+            /*Positioning in CSS - Absolute*/
+            position: absolute;
+            top:100px;
+            left:300px;
+        }
+
+        .abs_box_2_child{
+            height:100px;
+            width:100px;
+            /*float: left;*/
+            background-color: orange;
+
+            position: absolute;
+            /* top:40px; */
+            /* left:100px; */
+
+            right:20px;
+            bottom: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+     <div class="abs_box_1"></div>
+
+
+    <div class="abs_box_2">
+        <div class="abs_box_2_child"></div>
+    </div>
+</body>
+</html>
