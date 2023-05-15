@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .static_box_1 {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            float: left;
+
+            /* by default positioning */
+            /* position: static; */
+
+        }
+
+        .static_box_2 {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            float: left;
+            background-color: brown;
+
+
+            position: relative;
+            /* top:;left:;bottom:,right */
+            top:60px;
+            left:50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Positioning In CSS-
+    
+    Used to positonining html elements i.e box
+
+
+    Static-  by default positioning 
+    relative- box or elements move from its original space
+    absoulte- box or elements move according to window either parent element
+    fixed
+    sticky
+
+    
+    -->
+
+
+
+    <div class="static_box_1"> </div>
+    <div class="static_box_2"></div>
+
+</body>
+
+</html>

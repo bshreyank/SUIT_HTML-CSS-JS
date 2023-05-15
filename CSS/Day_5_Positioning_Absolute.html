@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .abs_box_1 {
+            height: 300px;
+            ;
+            width: 300px;
+            background-color: black;
+            float: left;
+        }
+
+        .abs_box_2{
+            height:300px;
+            width:300px;
+            float: left;
+            background-color: aquamarine;
+
+            /* position: relative;
+            /* right:140px; */
+            /* left:140px;  */
+
+
+            position: absolute;
+
+            top:40px;
+            left:190px;
+
+         
+        }
+
+        .abs_box_child{
+            height:100px;
+            width:100px;
+            float: left;
+            background-color: orange;
+
+            position: absolute;
+            /* top:40px; */
+            /* left:100px; */
+
+            right:0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- positoning Absolute-  box move according window either parent element  -->
+
+
+
+    <div class="abs_box_1"></div>
+
+
+    <div class="abs_box_2">
+
+        <div class="abs_box_child"></div>
+    </div>
+
+</body>
+
+</html>

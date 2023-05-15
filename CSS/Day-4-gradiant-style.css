@@ -1,0 +1,61 @@
+.container {
+  height: 400px;
+  width: 500px;
+  margin: auto;
+
+
+  /*  */
+  background-color: orange;
+
+  /* background-image */
+
+
+
+  /* background-image: linear-gradient();
+    
+      by default started from top side
+    */
+  background-image: linear-gradient(orange, red, pink);
+  background-image: linear-gradient(orange 30%, red 10%, pink);
+  background-image: linear-gradient(to right, navy, pink, red);
+
+
+  /* background-image:radial-gradient() 
+    
+    defined by center
+    
+    */
+  background-image: radial-gradient(orange, white, green);
+  background-image: radial-gradient(orange 20%, white 30%, green);
+  background-image: radial-gradient(navy 10%, pink, orange);
+
+  /* background-image: radial-gradient(closest-side at 40% 40%, red,orange,pink);
+    background-image: radial-gradient(farthest-side at 40% 40%, red,orange,pink); */
+  /* background-image: radial-gradient(closest-corner at 60% 70%, red,orange,pink);  */
+
+
+
+  /* background-image: conic-gradient();
+    
+      by default at 0deg i.e center position
+
+      spread equally from center
+
+    */
+  background-image: conic-gradient(red, blue, orange);
+  background-image: conic-gradient(red 40%, blue, orange);
+  background-image: conic-gradient(orange 90deg, white 90deg, green);
+  background-image: conic-gradient(orange, white, green);
+
+
+}
+
+
+
+.pie_chart {
+  height: 300px;
+  width: 300px;
+  background-image: conic-gradient(violet, orange, pink, rgb(90, 38, 38), rgb(86, 64, 60), indianred);
+
+  border-radius: 50%;
+}
