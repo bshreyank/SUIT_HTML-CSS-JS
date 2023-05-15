@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*****************************************************/
+  .top-bar {
+    height: 70px;
+    width: 100%;
+    float: left;
+  }
+  .top-bar li {
+    display: inline-block;
+    margin: 15px 15px; /*Top-Bottom , Right-Left*/
+
+    padding: 10px;
+
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;
+  }
+
+  .top-bar li a {
+    text-decoration: none;
+    color: black;
+    background-color: pink;
+    padding: 12px 27px;
+    margin-left: 15px;
+  }
+  /*****************************************************/
+  .marqueeTag {
+    height: 70px;
+    width: 100%;
+    float: left;
+    background-color: aqua;
+  }
