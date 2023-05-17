@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 300px;
+            width: 20%;
+            background: pink;
+
+            /* transition: width 3s, height 5s,transform 5s; */
+
+            transition: all 2s ease-in;
+
+
+        }
+
+
+
+        .container:hover {
+            /* height:200px;
+            width:100%; */
+
+            /* transform-  2d transform effects  */
+
+            /* tranform:roatate(deg) */
+            /* transform: rotate(90deg); */
+            transform: rotate(-360deg);
+
+
+            /* zoom in-zoom out effect */
+            transform: scale(1);
+
+            /* <1 - zoom in */
+            /* >1 - zoom out */
+            /* 1 - stable */
+            transform: scale(0.6);
+            transform: scaleX(1.6);
+            transform: scaleY(1.6);
+
+
+
+
+            /* translate-  move from its original space */
+
+            transform: translate(120px, 120px);
+            transform: translateX(120px);
+            transform: translateY(120px);
+
+
+
+            /* skew-shift like tilted angle */
+
+
+            /*transform:skew(deg) */
+            transform: skew(-30deg);
+            transform: skewX(-30deg);
+            transform: skewY(-30deg);
+
+
+
+
+            /* shorthand property
+            
+            matrix- combination of all 2d tranform properties*/
+
+            /*  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+
+
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+
+
+</body>
+
+</html>
