@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+
+
+            background-color: aqua;
+
+            display: flex;
+
+            /* to align horizontally- x-axis  */
+
+            /* justify-content: center/space-around/space-beween/space-evenly/flex-start/flex-end; */
+            justify-content: center;
+
+
+
+            /* vertically alignments */
+
+            /* align-items: center/flex-start/flex-end; */
+            align-items: center;
+
+
+            /* to change the direction-
+            
+            */
+            /* flex-direction: row;-  by default */
+            /* flex-direction: column; */
+
+
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+
+
+
+            text-align: center;
+            color: white;
+            font-weight: bold;
+
+
+            /* flex-wrap-  helps to make responsive  for smaller devices 
+            
+
+            if you gave width in % for specfic box then flex-wrap will not work
+            */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: no-wrap; */
+
+
+            /* flex-flow- combination of flex-direction and flex-wrap */
+
+            /* flex-flow: row wrap; */
+
+
+
+
+
+
+            /* child properties i.e always give in a specific element */
+
+            /* flex-grow: ;
+            order: ;
+              /* shrink the size or reduce size for smaller devices 
+            flex-shrink: 2;  */
+
+
+
+
+        }
+
+        .box_1,
+        .box_2,
+        .box_3,
+        .box_4,
+        .box_5 {
+            height: 150px;
+            width: 180px;
+
+            background-color: orange;
+
+
+
+
+        }
+
+        .box_1 {
+            /* flex-grow: 1; */
+
+
+            /* shrink the size or reduce size for smaller devices */
+            flex-shrink: 2;
+        }
+
+        .box_2 {
+            background-color: rgb(154, 41, 55);
+
+            flex-shrink: 3;
+
+
+
+
+            /* move towards last and change the order of boxes */
+            /* order: 1; */
+
+
+            /* increase size of flex box */
+            /* flex-grow: 1; */
+        }
+
+        .box_3 {
+
+            background-color: rgb(120, 86, 23);
+
+            /* change the order */
+            /* order: 1; */
+
+
+            /* flex-grow: 1; */
+
+
+
+
+            /* align-self: center; */
+
+        /* display: flex;;
+        flex:1; */
+
+
+
+        }
+
+        .box_4 {
+
+            background-color: rgb(72, 83, 163);
+        }
+
+        .box_5 {
+
+            background-color: rgb(44, 32, 10);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Flexbox- flexible box
+
+                  give flexible length to flexible items
+                  CSS3- 
+                  helps to align contents in a container
+
+                  2d direction works- row wise either column wise
+
+
+                  by default direction-  row wise
+                  Always work in parent
+               
+    
+    -->
+
+
+
+
+    <div class="container">
+        <div class="box_1">1</div>
+        <div class="box_2">2</div>
+        <div class="box_3">3</div>
+        <div class="box_4">4</div>
+        <div class="box_5">5</div>
+    </div>
+
+</body>
+
+</html>
