@@ -1,0 +1,37 @@
+/*The Transform Effect*/
+.transform {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+
+
+    transform: translate(50px,100px);
+  }
+
+
+/*The rotate() Method*/
+  .rotate
+    {
+        width: 300px;
+        height: 100px;
+        background-color:  yellow;
+        border: 1px solid black;
+      }
+      
+      #myDiv {
+
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+
+        /*The following example rotates the <div> element clockwise with 20 degrees:*/
+        /*transform: rotate(20deg);*/
+
+        /*Using negative values will rotate the element counter-clockwise.
+        The following example rotates the <div> element counter-clockwise with 20 degrees:*/
+                transform: rotate(-20deg);
+      }
+
+/*The scale() Method*/
