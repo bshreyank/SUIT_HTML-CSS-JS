@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container {
+            height: 300px;
+            width: 100%;
+            background-color: orange;
+
+
+            /* animation */
+
+            animation-name: demo;
+            animation-duration: 5s;
+
+            animation-delay: 5s;
+
+            animation-iteration-count: infinite;
+
+
+            /* shothand propertuy */
+
+            animation: demo 10s 4s infinite;
+
+
+        }
+
+
+        /* defined animation */
+        /* 
+        @keyframes demo {
+
+            from {
+                background-color: pink;
+                transform: rotateY(180deg);
+            }
+
+            to {
+
+                background-color: black;
+                transform: rotateY(-180deg);
+            }
+
+        } */
+
+
+
+
+        @keyframes demo {
+
+
+
+            /* divide into % */
+
+
+            /* execute 0s */
+            0% {
+                background-color: indigo;
+            }
+
+            /* 1s */
+            10% {
+                background-color: violet;
+            }
+
+            /* 2s */
+            20% {
+                background-color: orange;
+            }
+
+            /* 3s */
+            30% {
+                background: blue;
+            }
+
+            /* 4s */
+            40% {
+                background: yellow;
+            }
+
+            /* 5s */
+            50% {
+                background-color: tomato;
+            }
+
+            /*6s  */
+            60% {
+                background-color: black;
+            }
+
+            /* 7s */
+            70% {
+                background: navy;
+            }
+
+            /* 8s */
+            80% {
+                background-color: aquamarine;
+            }
+
+
+            /* 9s-10s */
+            100% {
+                background-color: brown;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- animation-  helps to make animated effects -->
+
+
+
+    <div class="container">
+
+
+    </div>
+
+</body>
+
+</html>
