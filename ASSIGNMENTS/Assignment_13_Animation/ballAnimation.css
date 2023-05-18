@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* *********************************************************************************************** */
+.ball_animation{
+    height: 100px;
+    width: 100px;
+
+    background-image: conic-gradient(orange, red, green, cyan);
+    border-radius: 50%;
+
+    position: relative;
+
+    animation-name: ball;
+    animation-duration: 10s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes ball {
+    /* divide into % */
+    /* execute 0s */
+    0% {
+        top:0px;
+        left: 0px;
+    }
+    
+    /* 1s */
+    10% {
+        top:0px;
+        left: 100px;
+    }
+
+    /* 2s */
+    20% { 
+        top:550px;
+        left: 100px;
+    }
+
+    30% {    
+        top:550px;
+        left: 500px;
+    }
+
+    40% {
+        top:0px;
+        left: 500px;
+    }
+
+    50% {
+        top:0px;
+        left: 700px;
+    }
+
+    60% { 
+        top:550px;
+        left: 700px;
+    }
+
+    70% { 
+        top:550px;
+        left:1000px;
+    }
+
+    80% {
+        top:0px;
+        left: 1000px;
+    }
+
+    90% {
+        top:0px;
+        left: 1400px;
+    }
+
+    100% { 
+        top:550px;
+        left: 1400px;
+    }
+
+}/*Keyframe*/
+
+/* *********************************************************************************************** */
+
+.background_color{
+    height: 100vh;
+    width: 100%;
+    background-color: coral;
+
+    /* shothand propertuy */
+    animation: back_color 10s 0s infinite;
+
+}
+
+@keyframes back_color {
+    /* divide into % */
+    /* execute 0s */
+    0% {
+        background-color: indigo;
+    }
+
+    /* 1s */
+    10% {
+        background-color: violet;
+    }
+
+    /* 2s */
+    20% {
+        background-color: orange;
+    }
+
+    /* 3s */
+    30% {
+        background: blue;
+    }
+
+    /* 4s */
+    40% {
+        background: yellow;
+    }
+
+    /* 5s */
+    50% {
+        background-color: tomato;
+    }
+
+    /*6s  */
+    60% {
+        background-color: black;
+    }
+
+    /* 7s */
+    70% {
+        background: navy;
+    }
+
+    /* 8s */
+    80% {
+        background-color: aquamarine;
+    }
+
+    /* 9s-10s */
+    100% {
+        background-color: green;
+    }
+
+}/*Keyframe*/
