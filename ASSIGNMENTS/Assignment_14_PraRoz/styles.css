@@ -185,11 +185,15 @@
 
 /* ******************************************************************* */
 .social_icons_box{
-    position: relative;
-    top:100px;
-    
+    margin-left: 100px;
 }
 
-.social_icons_box ul li i{
+.social_icons_box ul li{
     display: inline-block;
+    margin-top: 170px;
+    margin-left: 20px;
+}
+
+.social_icons_box ul li:hover {
+    transform: scale(1.2);
 }
