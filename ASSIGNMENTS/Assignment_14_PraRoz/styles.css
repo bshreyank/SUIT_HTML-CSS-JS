@@ -1,0 +1,195 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    float: left;
+    height: 100vh;
+    width: 100%;
+    background-image:url(../../Media/a31.jpg) ;
+    background-size: 100% 100%;
+}
+
+.navbar{
+    float: left;
+    height: 70px;
+    width: 100%;
+    
+}
+/* *********************************************************** */
+.logo{
+    float: left;
+    height: 100%;
+    width: 20%;
+    color: #F0750A;
+}
+
+.logo h1{
+    font-size: 40px;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+/* *************************************************************** */
+.nav_items{
+    float: left;
+    height: 100%;
+    width: 55%;
+}
+
+.nav_items ul{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 190px;
+    margin-top: 22px;
+    
+}
+.nav_items ul li{
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+}
+/* *************************************************************** */
+.search_box{
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+
+.search_box input{
+    margin-top: 25px;
+    border: 3px solid #F0750A;
+    height: 20px;
+}
+.search_box input::placeholder{
+    text-align: center;
+}
+
+.search_box button{
+    background-color: #F0750A;
+    border: 2px solid #F0750A;
+    margin: -4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: white;
+}
+/* *************************************************************** */
+.about_content{
+    float: left;
+    height: 670px;
+    width: 100%;    
+}
+
+.container_1{
+    float: left;
+    height: 100%;
+    width: 50%;
+    
+}
+
+.padding_box{
+    padding-top:60px ;
+}
+
+.container_1 h1{
+    font-size: 70px;
+    margin-left: 40px;
+    color: white;
+    line-height: 1.2;
+}
+
+.container_1 p{
+    color: white;
+    margin-top: 40px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-right: 40px;
+    margin-left: 40px;
+    font-size:large;
+    text-shadow: 2px 2px 2px black;
+}
+
+.btn_1{
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 30px;
+    width: 150px;
+    background-color: #F0750A;
+    border: 2px solid #F0750A;
+    box-shadow: 4px 4px 5px 2px white;
+}
+
+/* *************************************************************** */
+.container_2{
+    float: left;
+    height: 100%;
+    width: 50%;
+    
+}
+
+
+.login_box{
+    height: 80%;
+    width: 70%;
+    background-color:hsla(0,0%,0%,0.5);
+    margin-left: 80px;
+}
+
+.login_box button{
+    
+    height: 30px;
+    width: 300px;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: #F0750A;
+    border-radius: 7px;
+}
+
+.login_box input[type="email"]{
+
+    
+    position: relative;
+    top:50px;
+    left: 50px;
+    margin-top: 50px;
+    height: 30px;
+    width: 450px;   
+    border-color: transparent;
+    border-bottom: 2px solid orange;
+    font-size: 15px;
+    background: transparent;
+}
+
+.login_box input[type="password"]{
+    
+    position: relative;
+    top:50px;
+    left: 50px;
+    margin-top: 50px;
+    height: 30px;
+    width: 450px;   
+    border-color: transparent;
+    border-bottom: 2px solid orange;
+    font-size: 15px;
+    background: transparent;
+}
+
+.login_box p{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 150px;
+
+}
+
+/* ******************************************************************* */
+.social_icons_box{
+    position: relative;
+    top:100px;
+    
+}
+
+.social_icons_box ul li i{
+    display: inline-block;
+}
