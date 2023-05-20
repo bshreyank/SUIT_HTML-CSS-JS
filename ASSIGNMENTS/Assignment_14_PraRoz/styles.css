@@ -58,12 +58,14 @@
 }
 
 .search_box input{
-    margin-top: 25px;
+    margin-top: 20px;
     border: 3px solid #F0750A;
-    height: 20px;
+    height: 25px;
 }
 .search_box input::placeholder{
     text-align: center;
+    padding: 2px;
+    font-size: smaller;
 }
 
 .search_box button{
@@ -73,6 +75,7 @@
     padding-left: 7px;
     padding-right: 7px;
     color: white;
+    height: 25px;
 }
 /* *************************************************************** */
 .about_content{
