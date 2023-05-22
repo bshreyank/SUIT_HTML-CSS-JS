@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+            float:left;
+        }
+
+        .box_1,
+        .box_2,
+        .box_3,
+        .box_4,
+        .box_5,
+        .box_6 {
+            height: 200px;
+            width: 16.66%;
+            float: left;
+        }
+
+        .box_1 {
+            background-color: violet;
+        }
+
+        .box_2 {
+            background-color: orange;
+        }
+
+        .box_3 {
+            background-color: blue;
+        }
+
+        .box_4 {
+            background-color: yellow;
+        }
+
+        .box_5 {
+            background-color: green;
+        }
+
+        .box_6 {
+            background-color: rgb(163, 183, 163);
+        }
+
+        /* smaller devices - 1 partiton per row */
+        /* tablet device - 2 partiton per row */
+        /* laptop device -    3 partition per row */
+
+
+        @media All And (max-width:668px) {
+
+            /* 0- 668px */
+            /* mobile devices or smaller devices */
+            .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6 {
+                width: 100%;
+                
+            }
+        }
+
+
+        /* tablet and >668 & 926px */
+        @media All And (min-width:668px) {
+
+            .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6 {
+                width: 50%;
+                
+            }
+        }
+
+
+
+        /* laptop devices */
+        /* >926px */
+        @media All And (min-width:926px) {
+
+            .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6 {
+                width: 33.33%;
+                
+            }
+
+        }
+
+        /* larger devices */
+        /* >1200px */
+
+       @media screen And (min-width:1200px) {
+
+            .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6 {
+                width: 16.66%;
+            }
+
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- media query-   helps to build responsive Ui for multiple devices i.e mobile,tablet,small screen -->
+
+
+
+    <div class="container">
+        <div class="box_1"></div>
+        <div class="box_2"></div>
+        <div class="box_3"></div>
+        <div class="box_4"></div>
+        <div class="box_5"></div>
+        <div class="box_6"></div>
+    </div>
+
+
+
+</body>
+
+</html>

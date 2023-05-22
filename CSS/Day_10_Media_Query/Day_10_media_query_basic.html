@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .div_box_1 {
+            height: 200px;
+            width: 100%;
+            float: left;
+            background-color: aqua;
+        }
+
+
+        .box_2 {
+            height: 100px;
+            width: 1200px;
+            background-color: black;
+            float: left;
+            margin: 10px 0px;
+        }
+
+        /* defined media query */
+
+        /* media type- easy to write media query for multiple devices or media types */
+        /* screen- media query only for laptop, tablet,mobile and larger devices
+        speech- only for screen reader
+        all- all media types */
+        @media screen And (max-width:668px) {
+            /* body{
+                background-color: black;
+            } */
+
+
+            /* 0-667px */
+            /* mobile devices */
+            .div_box_1 {
+                background: orange;
+            }
+
+        }
+
+        /* >668px and <926px */
+        /* tablet devices */
+        @media screen And (min-width:668px) And (max-width:926px) { 
+
+
+            /* tablet device */
+             .div_box_1 {
+                background-color: yellow;
+            }
+        }
+
+
+        /* laptop device
+         >927px and < 1199px
+        */
+         @media screen And (min-width:927px) {
+
+            .div_box_1 {
+                background-color: violet;
+            }
+
+        } 
+
+
+
+
+        /* >1200px */
+        /* for larger screen devices */
+        @media screen And (min-width:1200px) {
+
+            .div_box_1{
+                background-color: tomato;
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div_box_1"> </div>
+
+    <!-- <div class="box_2"></div> -->
+
+
+
+
+</body>
+
+</html>
