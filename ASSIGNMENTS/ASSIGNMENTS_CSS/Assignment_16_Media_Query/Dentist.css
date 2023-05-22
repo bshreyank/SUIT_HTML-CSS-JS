@@ -1,0 +1,92 @@
+*{
+            padding: 0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+
+        section{
+            height: 500px;
+            width:100%;
+            float:left;
+        }
+
+        .about_us_box_1{
+            height:100%;
+            width: 50%;
+            float: left;
+            padding:10px 30px;
+        }
+
+        .about_us_box_2{
+            height:100%;
+            width: 50%;
+            float: left;
+        }
+
+        .padding_box{
+            padding:30px;
+        }
+
+        .about_us_box_2 h1{
+            font-family: Montserrat, sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 50.4px;
+            color: rgb(51,51,51);
+            margin-top: 15px;
+        }
+
+        .about_us_box_2 p{
+            font-family: Montserrat, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 27px;
+            color: rgb(112,112,112);
+            margin-top: 20px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .progress_bar_box{
+            height: 70px;
+            width:100%;
+            float: left;
+            color: black;
+        }
+
+        .progress_bar_box span{
+            color: black;            
+            float: right;
+            margin-right: 10px;
+        }
+
+        .progress_bar_line{
+            height: 13px;
+            width: 100%;
+            float: left;
+            background-color: #F4F4F4;
+            margin-top: 10px;
+        }
+
+
+@media screen and (max-width: 768px) {
+    section {
+        height: auto;
+    }
+
+    .about_us_box_1,
+    .about_us_box_2 {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    .about_us_box_1 {
+        margin-bottom: 20px;
+    }
+
+    .progress_bar_box,
+    .progress_bar_line {
+        width: 80%;
+    }
+}
