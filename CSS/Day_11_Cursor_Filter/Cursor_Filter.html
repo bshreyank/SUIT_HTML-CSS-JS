@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor-Filter</title>
+
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        background-color: aquamarine;
+    }
+
+    /*Cursor*/
+    .box{
+        cursor: pointer;
+        cursor: move;
+        cursor: text;
+        cursor: copy;
+        cursor: wait;
+        cursor: progress;
+        cursor:zoom-in;
+        cursor: zoom-out;
+    }
+
+    /*Filter*/
+    img{
+
+        /*=========== pixel ===============*/
+        /*filter: blur(10px);*/ 
+
+        /*=========== percentage % ===============*/
+        /*filter: brightness(100%);*/
+        /*filter: grayscale(50%);*/
+        /*filter:contrast(30%);*/
+        /*filter:invert(100%);*/
+        /* filter: saturate(70%);*/
+        /*filter: opacity(0.8);*/
+
+        /*=========== degree ===============*/
+        filter:hue-rotate(150deg);
+
+    }
+
+</style>
+
+</head>
+<body>
+
+    <!-- Cursor -->
+    <div class="box"></div>
+
+    <!-- Filter -->
+        <img src="../../Media/a14_bg.jpg" alt="" height="400px" width="400px">
+
+
+</body>
+</html>
