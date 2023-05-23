@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 70px;
+            width: 100%;
+            background-color: aquamarine;
+            margin: auto;
+
+            display: flex;
+
+            transition: all 0.3s ease-in;
+        }
+
+        .container:hover {
+            background-color: navy;
+        }
+
+        ul {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        ul li {
+            list-style-type: none;
+            font-size: 20px;
+            color: white;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        .submenu {
+
+
+            position: absolute;
+            top:70px;
+
+            height: 180px;
+            width: 150px;
+            background-color: rgb(190, 180, 182);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+            /* display: none; */
+            visibility: hidden;
+
+            transition: all 0.3s ease-in;
+        }
+
+        .submenu:hover{
+            
+            transform: translate(100px);
+        }
+
+        .menu li:hover .submenu {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hover -->
+
+
+    <div class="container">
+
+        <ul class="menu">
+            <li>Home
+
+                <ul class="submenu">
+                    <li>Vision</li>
+                    <li>Mission</li>
+                    <li>History</li>
+
+                </ul>
+
+            </li>
+
+
+
+            <li>About Us</li>
+
+
+            <li>Contact Us</li>
+            <li>Services
+
+                <ul class="submenu">
+                    <li>Vision</li>
+                    <li>Mission</li>
+                    <li>History</li>
+                </ul>
+
+
+            </li>
+            <li>Blogs</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
