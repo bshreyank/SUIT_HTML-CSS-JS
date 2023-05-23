@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+
+    <style>
+        p::before{
+            /*must have:- content:' '*/
+            content:'Hello before Data';
+            color: orange;
+        }
+        p::after{
+            content: 'Hello after Data';
+            color: cyan;
+        }
+
+        p::selection{
+            color: red;
+            /* background-color: orange; */
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- before ,after,selection
+    ::  
+     -->
+     
+    <p>Hello ReactJS</p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium
+      culpa aliquid sed ad harum deserunt voluptas commodi quis, neque eum, sint
+      cum enim. Ipsa fuga provident adipisci sequi quod.
+    </p>
+  </body>
+</html>
