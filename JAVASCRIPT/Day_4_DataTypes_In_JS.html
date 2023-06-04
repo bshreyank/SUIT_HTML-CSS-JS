@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes In JS</title>
+</head>
+
+<body>
+    <!-- Datatypes In JS -->
+
+    <!-- 
+    Primitive data types- predefined data types-  
+
+              int,float,char,long,londouble,double......boolean
+    
+    Non_primitive Datatypes-  derived from Primitive data types,
+                               Created by developers
+
+                               In DS- Stack,queue,LL,tree,.... -->
+
+
+    <!-- IN JS-  Primitve DT- number,string,null,undefined,boolean,symbol
+
+         Non_primitive DT_  Array ,object, -->
+
+
+    <script>
+
+        //Number
+        var age = 23;
+        // alert(age);
+        console.log(age);
+
+        //To check Data type-
+        //typeof operator
+        console.log(typeof age);
+
+
+
+        // ************************************************
+
+        // string-  single value in " " or ''
+        let name = "Pratik Akash Akshay";
+        // let name='10';
+        console.log(name);
+
+        console.log(typeof name);//string
+
+
+        // ***********************************************************
+        //Boolean
+
+        let a = true;
+        let b = false;
+        console.log(a);//true
+        console.log(b);//false
+
+        console.log(typeof a);//boolean
+
+
+        // ********************************************************
+
+        //null-  pass the null value;
+        const fname = null;
+        console.log(fname);
+
+        console.log(typeof null);// object- as per expert professionals this is bug In JS
+
+        //empty value
+        var lname = '';
+        console.log(lname);
+        console.log(typeof lname);
+
+
+
+        // ****************************************************************
+
+        //undefined-   when we only declared the variable but not intialized any value
+
+        var x;
+        console.log(x);//undefined
+        console.log(typeof x);//undefined
+
+        // *******************************************************
+
+        // Array- we can stored multiple type of data in a single variable 
+        // Array Is special type of object
+        //[ ]-  syntax
+
+        // var name="pratik";
+        // var name2="Abc"
+        // var age=23;
+        // var name3="XYZ";
+
+
+        const arr = ["Pratik", "Abc", 23, true, "XYZ",{name:'pratik'}];
+        console.log(arr);
+
+        console.log(typeof arr);//object
+
+        // ****************************************************
+
+        // Object- is a entity having methods and properties
+        //        store data in key:value pair
+
+
+        const obj = {
+            // key:value
+            name: 'Pratik',
+            age: 23,
+            Position: 'MERN Developer',
+        }
+
+
+        console.log(obj);
+        console.log(typeof obj);//object
+
+        // Array Object
+        // *************************
+
+        const user = [{
+            // key:value
+            name: 'Vaibhav',
+            age: 25,
+            Position: 'REACT Developer',
+        },
+
+        {
+            name: 'XYZ',
+            Position: 'REACTJS',
+            age: 30,
+        }
+        ]
+
+        console.log(user);
+        console.log(typeof user);//Object
+
+
+        // *************************************************
+
+        // symbol
+        //create a new symbol
+        //called Symbol()
+
+
+        const ab=Symbol();
+        console.log(ab);
+
+
+        // console.log(Symbol("foo"));
+
+        
+
+        let A=Symbol("Abc");
+        let B=Symbol("Abc");
+
+        console.log(typeof A);//symbol
+
+        console.log(A===B);
+
+        // *****************************
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

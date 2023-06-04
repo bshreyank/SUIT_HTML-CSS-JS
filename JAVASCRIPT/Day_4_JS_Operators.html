@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Operators 
+    
+    
+        Arithematic Operators=> + ,-, \ , %, *
+
+        INC/DEC -   ++a,--a  (pre increment/decrement)  and a++ a-- (post inc/dec);
+
+
+        Assignment Operator-   =, +=,-=,*=,/=,%=,
+        
+        
+        Equality op-   ==, ====
+        Comparsion Op-  == ,===, > ,<,>=,<=, !=, !==,!===;
+
+
+        Logical op-   && , ||, !-  Conditions check
+
+
+
+        Concatenation operator-  +
+
+
+        Ternary oper -  ? 
+
+        Exponentiation op-  ** (Es-16)
+
+        typeof op - check data type of variable
+
+
+     bitwise op-   & | ~(Not) ^ (XOR)
+     
+     
+
+    -->
+
+
+    <script>
+
+        //  Arithematic Operators=> + ,-, \ , %, *
+
+
+
+
+        var a = 20;
+        var b = 10;
+
+
+        // operand  -no1 and no2
+        // operator - +
+        var c = a + b;
+        console.log(c);
+        console.log(a * b);
+        console.log(a / b); //quotient
+        console.log(a % b); //remainder
+        console.log(a - b);
+
+
+
+        // ********************************************
+
+
+        console.log(a + b + a);//50
+        console.log(a - b + a);//30
+        console.log(a / b + a);//22
+        console.log(a * b + a);//220
+        console.log(a % b + a);//20
+
+
+        // Precendence-  * /  %- same priority and higher than + - 
+        console.log(a + b * a);//  +200+20 //220
+        console.log(a - b * a);// +200 - 20 //-180
+        console.log(a / b * a);//40
+        console.log(a * b * a);//4000
+        console.log(a % b * a);//0
+
+
+
+        // ******************************************************
+
+
+
+
+        // Inc/Dec --  increment and decrement value by 1
+        //post -  x++;
+        //pre - ++x
+
+
+        var x = 20;
+        x++;
+
+        console.log(x);//21
+        console.log(++x);//22
+        console.log(x);//22
+
+        console.log(x++);//22  => 23
+        console.log(x);//23
+
+        var no1 = 10;
+        no1++; //11
+        --no1; //10
+        ++no1; //11
+        no1-- // 10
+        no1--;//9
+        no1++;//10
+
+        console.log(no1);
+
+        // **********************************************
+
+        var no2 = 30;
+        ++no2;
+        console.log(no2);//31
+        no2++;
+        console.log(no2);//32
+        --no2;
+        console.log(no2--); //31 => later 30
+        console.log(--no2); //29
+        console.log(++no2);//30
+
+        // *******************************************************
+
+
+        var x = 3;
+        var y = x++;
+        var z = ++x;
+
+        console.log(x); // 3 -> 4 -> 5
+        console.log(y); // 3  later 4
+        console.log(z); // 5
+        
+        // 5 3 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
