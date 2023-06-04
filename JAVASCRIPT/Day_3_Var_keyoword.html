@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- var- 
+         used to declared variable
+        we can declared variable without initialization
+        we can redeclared variable with same name
+        we can up date the value
+        Global scope- we can access the value inside and outside the block or inside or outside function scope
+
+
+        //By Default value=undefined
+        eg.var a;
+        console.log(a);
+    
+    -->
+
+
+    <script>
+
+        var name = "Akash";
+        // document.write("<h1>"+name+"</h1>");
+        document.write(name);
+        console.log(name);
+
+
+
+        // ****************************
+
+        // we can declared variable without initialization
+
+        var age;
+        age = 23;
+        console.log(age);
+
+        // ***************************************
+        // we can redeclared variable with same name
+        var a = 10;
+        var a = 20;
+        console.log(a);//20       
+
+
+        // ***********************************************
+
+        // we can update the value
+
+        var b = "Abc";
+        b = "XYZ";
+
+        console.log(b);
+
+
+        // *******************************************************
+
+        // Global scope- we can access the value inside and outside the block
+        //  or inside or outside function scope
+
+
+       var user_name="Vaibhav";
+       if(true)
+       //block or function scope
+       {
+         var user_name="Lalit";
+         console.log(user_name); //lalit
+       }
+
+       console.log(user_name); //Lalit
+
+       //
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

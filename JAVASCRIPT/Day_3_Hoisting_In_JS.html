@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Hoisting In JS
+    
+    we can declared varibale after used
+    we can used variable before declartion
+
+
+ The block of code is aware of the variable, but it cannot be used until it has been declared
+
+ Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+
+let and const keywords are  not hoisted 
+
+var are hoisted
+
+    at Day_2_Const_keyword.htm
+    -->
+    <script>
+
+        // console.log(a);//undefined
+        // var a=20;
+
+        // console.log(x);
+        // var x;
+        // x=20;
+
+        // console.log(x);//
+
+
+
+
+
+        // ****************************************
+
+        let a;
+        console.log(a);//undefined
+
+
+
+        // error- reference error
+        // console.log(y); //
+        // let y;
+
+
+        // console.log(z);
+        // let z;
+        // z=20;
+
+
+        // console.log(name);//reference error
+        // const name = "Pratik";
+
+
+
+        // user_name="Pratik";
+        // // console.log(user_name);
+        // let user_name;
+
+
+
+        // name="Pratik";
+        // let name;
+
+        // console.log(name);
+        // let name="pratik";
+
+    </script>
+
+
+    <!-- var a;
+console.log(a)
+a=30 -->
+    <!-- "use strict" = keyword in JavaScript in strict mode does not allow variables to be used if they are not declared.
+  -->
+
+
+    <!-- Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript.
+    If a developer doesn't understand hoisting, programs may contain bugs (errors).
+    To avoid bugs, always declare all variables at the beginning of every scope.
+    Since this is how JavaScript interprets the code, it is always a good rule. -->
+</body>
+
+</html>
