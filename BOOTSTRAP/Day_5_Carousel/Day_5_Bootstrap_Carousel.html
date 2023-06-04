@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        .carousel-indicators li {
+            height: 20px;
+            width: 20px;
+            border-radius: 0px 20px 0px 20px;
+            background-color: orange;
+        }
+
+        .carousel-caption {
+            /* padding: 20px 100px !important;
+            margin: 40px !important; */
+
+            height: 400px !important;
+            width: 70% !important;
+
+            background-color: hsla(0, 0%, 0%, 0.3) !important;
+
+            border-radius: 0px 30px 0px 30px;
+            box-shadow: 2px 2px 5px 2px orange;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Carousel/Slider -->
+
+
+
+    <div class="carousel slide" data-ride="carousel" id="carousel1">
+
+
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="../Media/images/a31.jpg" alt="" class="img-fluid w-100 vh-100">
+
+
+
+                <div class="carousel-caption bg-dark p-5 mb-5">
+                    <h1 class="text-warning font-weight-bold">Welcome To The React-Js Technology</h1>
+                    <p class="text-center my-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                        fuga nihil ipsam labore?
+                        Incidunt, esse mollitia soluta placeat rerum reiciendis, laboriosam officia tempore asperiores
+                        ipsa praesentium exercitationem quibusdam commodi corrupti itaque autem, molestiae maiores.
+                        Dolores cum dolor dicta, distinctio fuga earum, quibusdam cumque odio facere, odit animi minima.
+                        Tenetur, aliquam.</p>
+
+                    <button class="btn btn-danger font-weight-bold mx-3 px-3 ">Get A Quote</button>
+                    <button class="btn btn-outline-warning font-weight-bold px-3">Book Now</button>
+                </div>
+
+
+            </div>
+
+            <div class="carousel-item">
+                <img src="../Media/a107.jpeg" alt="" class="img-fluid w-100 vh-100">
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="../Media/a114.jpg" alt="" class="img-fluid w-100 vh-100">
+            
+            
+            </div>
+        </div>
+
+
+        <a class="carousel-control-prev" href="#carousel1" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+
+        <button class="carousel-control-next" data-target="#carousel1" data-slide="next"> <span
+                class="carousel-control-next-icon"></span></button>
+
+    </div>
+
+    <!-- <button class="btn btn-danger">btn-danger</button>
+    <button class="btn btn-dark">btn-dark</button>
+    <button class="btn btn-outline-success">btn-success</button>
+    <button class="btn btn-primary">btn-primary</button>
+    <button class="btn btn-secondary">btn-secondary</button> -->
+
+
+
+</body>
+
+</html>
