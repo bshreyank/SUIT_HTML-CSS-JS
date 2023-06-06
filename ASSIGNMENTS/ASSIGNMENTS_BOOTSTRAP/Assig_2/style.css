@@ -1,0 +1,29 @@
+#header-info-1, #header-info-2{
+    font-family:Roboto;
+                  font-size:12px;
+                  margin-left: 150px;
+                  padding:8px;
+
+    :hover{
+        transform: rotateY(180deg);
+    }
+}
+
+#header-info-2 li :hover{
+    color: crimson;
+    transition: 0.3s;
+    transform: rotateY(180deg);
+}
+
+
+
+#navbar-margin{
+    margin-left: 150px;
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+
+#navbar-items{
+    color: #0D2D3E;
+    margin-left: 30px;
+}
