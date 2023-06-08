@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Control statement-
+    
+        conditional statement- if, if else, if elseif else, switch
+
+        looping statement-  while,do-while,for,for in ,for of,for each,   
+    -->
+
+
+    <script>
+
+        // if else-  check 2 conditions
+
+        // syntax
+
+        // if (true) {
+        //     // if true
+        //     //  statements
+        // }
+        // else {
+        //     //if  condition false
+        // }
+
+
+
+        // ****************************************
+
+        // given no is even or odd
+
+
+        var no = 20;
+        if (no % 2 == 0) {
+            console.log(no + " Even No");
+        }
+
+        else {
+            console.log(no + " Is Odd No");
+        }
+
+
+
+        // **************************************
+
+        let a = 50;
+        let b = 30;
+
+        if (a > b) {
+            console.log(a + " Is Greater");
+        }
+
+        else {
+            console.log(b + " Is Greater");
+        }
+
+
+        // ****************************************
+
+        // Shopping_amt >= 5000
+        //disc = 10 %;
+
+        //  >=10000
+        //  disc=15%
+
+        // either disc = 0 %;
+
+
+        let shop_amt = +prompt("Enter Your Shopping Amt ", 0);
+
+
+        var disc = 0;
+        if (shop_amt >=10000) {
+
+            disc = 10;
+        }
+
+        else{
+            disc = 0;
+        }
+
+
+        var discount = shop_amt * disc / 100;
+        var total_amt = shop_amt - discount;
+
+        // document.write("<h1>Total Shopping Amount Is :" + shop_amt + " Rs </h1>");
+
+        document.write(`<h1>Your Total Shopping Amount Is: Rs.  ${shop_amt} </h1> <br>`);
+        document.write(`<h1>You Get ${disc}%  Discount And Your Discount Value : Rs ${discount} </h1> <br>`);
+        document.write(`<h1>You total Net Amount Is: Rs. ${total_amt}  </h1>`);
+
+
+
+        // 
+        // template literal
+
+        // ``- back tick symbol
+
+        var c = "Pratik"
+        // alert("Pratik "+c);
+
+        // modern way
+        // alert(`Hello Welcome ${c}`);
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

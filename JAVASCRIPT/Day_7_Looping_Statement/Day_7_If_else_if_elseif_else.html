@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- if else if- helsp to check mutliple conditions -->
+
+    <!-- syntax -->
+    <script>
+
+        // if(true)
+        // {
+
+        // }
+        // else if()
+        // {
+
+        // }
+
+        // else{
+
+        // }
+
+
+
+        // bigger no find out of 3
+
+        // var no1 = +prompt("Enter No 1", 0);
+        // var no2 = +prompt("Enter No 2", 0);
+        // var no3 = +prompt("Enter No 3", 0);
+        // if (no1 > no2 && no1 > no3) {
+        //     alert(`${no1} Is A Bigger`);
+        // }
+
+        // else if (no2 > no1 && no2 > no3) {
+        //     alert(`${no2} Is A Bigger`);
+        // }
+
+        // else {
+        //     alert(`${no3} Is A Bigger `);
+        // }
+
+
+        // ******************************8
+
+        // if(no%2==0)
+        // {
+        //     //even
+        // }
+
+        // else{
+        //     // odd
+        // }
+        // **********************************
+
+
+
+        // shop_amt>5000  disc- 5%
+        // shop_amt>10000  disc- 10%
+        // shop_amt>15000  disc- 15%
+        // shop_amt>20000  disc- 20%
+        // shop_amt>30000  disc- 30%
+
+        // disc-0%
+
+
+        let shop_amt = Number(prompt("Enter Shopping Amt"));
+
+
+        let disc = 0;
+        if (shop_amt >= 5000 && shop_amt < 10000) {
+            disc = 5;
+        }
+
+        else if (shop_amt >= 10000 && shop_amt < 15000) {
+            disc = 10;
+        }
+
+        else if (shop_amt >= 15000 && shop_amt < 20000) {
+            disc = 15;
+        }
+
+        else if (shop_amt >= 20000 && shop_amt < 30000) {
+            disc = 20;
+        }
+
+        else if (shop_amt >= 30000) {
+            disc = 30;
+        }
+
+        else {
+            disc = 0;
+        }
+
+
+        var discount=disc*shop_amt/100;
+        var total_amt= shop_amt-discount;
+
+        document.write(`<h1>Your Total Shopping Amt => ${shop_amt} </h1> <br>`);
+        document.write(`<h1>Your Get ${disc}% Discount And Your Discount Amt Is  => ${discount}</h1> <br>`);
+        document.write(`<h1>Your Total Net Amount Is  => ${total_amt} </h1> <br>`);
+     
+
+        // take 6 subject marks
+
+        // pass-  >35
+                   
+        //         >70- First class with a disticntion
+        //         >=65-  You get A first class
+        //         >60-  Second class
+        //         >=40-  Pass
+
+        // fail
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
