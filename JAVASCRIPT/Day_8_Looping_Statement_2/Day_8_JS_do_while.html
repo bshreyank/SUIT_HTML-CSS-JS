@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- do while-  exceuted at least one times if conditions true either false -->
+
+    <!-- syntax
+    
+    do{
+
+        //statement
+        //inc/dec;
+    }while(cond)
+  
+    
+    -->
+
+
+    <script>
+
+        // var no=1;
+        // do{
+        //     document.write(no+" ");
+        //     no++;
+        // }while(no<=10);
+
+        // ****************************
+
+        // var no=1;
+        // do{
+        //     document.write(no+" ");
+        //     no++;
+        // }while(no<=10);//11- at least 1 time execute
+
+
+
+        // *******************************************
+
+        //  even no
+
+
+        // var no=2;
+        // while(no<=100)
+        // {
+        //     if(no%2==0)
+        //     {
+        //         document.write(no+" ");
+        //     }
+        //     no++;
+        // }
+
+
+
+        // var no = 2;
+        // do {
+
+        //     if (no % 2 == 0) {
+        //         document.write(no + " ");
+        //     }
+
+        //     no++;
+        // } while (no <= 100);
+
+
+
+        // ***************************************
+
+        // Print odd no 1-50 and sum
+
+        // var no=1;
+        // do{
+
+        //     // if(no%2!==0)
+        //     // {
+        //         document.write(no+" ");
+        //     // }
+        //     no+=2;
+        // }while(no<=50)
+
+
+        var no = 1;
+        var sum = 0;
+        do {
+
+
+            if (no % 2 !== 0) {
+                document.write(no + " ");
+                sum += no;
+            }
+
+            no++;
+        } while (no <= 50)
+
+
+        document.write("<br>Total Sum Is " + sum);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
