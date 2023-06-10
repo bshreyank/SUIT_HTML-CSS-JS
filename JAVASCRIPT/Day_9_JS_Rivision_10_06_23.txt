@@ -1,0 +1,437 @@
+DAY-1
+
+
+JS- SL-  runs on browser
+
+
+Breden Eich in  10 days
+1995-
+
+
+
+MOCHA- 1995
+
+
+LiveScript,ECMA ,JSScipt,World live ,Javascript
+
+
+Netscape Navigator-
+
+
+
+
+************************
+
+Easy to learn
+
+faster devlopment
+
+open source
+
+Riched interface
+
+popular- 
+basically JS  is everywhere
+
+
+Web app, gaming app,andriod app, smartwatch App, desktop app,dynamic web application.server application
+
+
+validations.manipulations,perform opearations..
+
+
+JS- react Native
+
+
+
+*******************************************
+
+
+version-
+
+ECMA- 
+
+Es-1-  1997
+
+es-2- 1998
+es-3- 1999
+
+es-4 -no relased
+
+
+
+es-5-2009-  old JS
+es-6- 2015-  Modern JS
+
+
+es-7- -2016
+es-17-2017
+es-18-2018
+es-19
+es-20
+es-21
+es-22
+
+
+
+*****************************
+
+
+All browser supports
+os supports
+case sensitive   a a
+
+
+end to end application-  nodejs
+ React
+
+
+
+ *****************************
+
+ disadvantage-   security issue on browser
+   
+   single inheritance
+
+   stop rendering if there is single line of error in js code(browser extremely tolerant js error)
+
+
+***************************************
+
+JS    JAVA
+
+
+
+
+**********************
+
+
+
+inline
+internal
+external
+
+
+
+***************************
+
+output possibility
+
+console.log/warn/error/success/table/time
+
+
+document.write()
+
+
+innerhtml=""
+
+
+
+alert();
+
+prompt()
+
+
+*******************************************************************
+
+
+indentifiers- 
+
+var fname=
+
+
+_ $ alphabets
+
+**********************************************
+
+firstName-camel case       FirstName-pascal case
+************
+
+variables-  used to declare js variables
+     hold data or stored data
+
+memory allocated
+
+
+any type of data -  number,string.array,object,null,undefined,boolean
+
+
+
+
+var let const
+
+
+
+
+var a;
+a="10"
+
+
+var a=10;
+var a=15
+
+
+
+var,let,const
+
+var a={
+
+    key:value,
+}
+
+var a=[10,30]
+
+
+
+
+
+
+**************************************************************
+
+
+data types=  
+
+
+Primitive DT= predefined data types
+
+JS-
+
+number,string,boolean,symbol,null,undefined
+
+
+Non-primitive data types-   User defined data type-   
+
+
+Array ,object
+
+
+
+var age=[10,"pratik",true,null,{}]
+
+
+typeof()
+
+
+var a=null;
+var a="" 
+
+
+*************************************************************
+
+
+Opearators
+
+
+
+Arithmatic- + - * % /
+
+inc/dec   ++ --
+
+
+assignment op-  LSV=RSV  a=b;  -=,+=,/=,%=,*=
+
+
+a+=b
+
+a=a+b;
+
+
+
+Equality op-  == === 
+
+
+comparasion--   > < >= <= !  >>> <<<   != 
+
+
+!- return true when conditions become false
+!- return false when conditions becomes true
+ !== 
+
+
+ 
+
+ ternary op-  ? alternate if -else
+ ( condi ? " " :  )
+
+
+
+
+
+
+logical op-  && || !
+
+
+
+concatenation op-  + 
+
+
+modern way
+
+  var a=10;
+
+  console.log("Hello"+a);
+  console.log(`Hello ${a}`);
+
+
+
+
+  ******************************
+
+  NaN- value
+
+  var a=10/"10" -  1
+  var a=10+"10" -  1010
+  var a=10/"Pratik" -  NaN
+
+
+  isNaN-  true or false
+
+  var a=10;
+  isNaN=false
+
+  var a="10"
+  isNaN=true
+
+  *****************************
+
+
+  typeof op
+
+
+
+  bitwise -  & |  ^(XOR) ~ not Opearators
+
+
+
+
+  exponentation Opearators
+
+  var a=5;
+  console.log(a**2)//25
+  console.log(a**3)//125
+
+  Math.pow(5,2)//25
+
+
+
+  ****************************************
+
+  control statment
+
+
+  conditional-
+
+Initialize
+  if(cond)
+  {
+    //statment
+  }
+  
+
+
+  if else
+
+
+  if else if else 
+
+
+  switch- 
+
+
+  switch()
+  {
+    case:
+
+    break;
+
+
+
+    default:
+  }
+
+
+
+
+******************************************
+
+
+lopping statment- iterate through conditions until conditions become false
+
+
+while
+
+
+var a=1;
+while(a<=10)
+{
+    console.log(a);
+    a++;
+}
+
+
+
+************************
+Initialization
+do{
+    
+    //statment
+    //Inc/Dec
+}while(cond)
+
+
+
+***************************
+
+for lopp
+
+for(Initialization,cond,Inc/dec)
+
+
+
+for(let i=1;i<10;i++)
+{
+    console.log(i);
+
+    for(let j=1;j<=10;j++)
+    {
+        console.log(j);
+    }
+}
+
+
+
+
+*********************************************************8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var let,const
+
+
+
+
+
+
+
+
+
+
+
+
