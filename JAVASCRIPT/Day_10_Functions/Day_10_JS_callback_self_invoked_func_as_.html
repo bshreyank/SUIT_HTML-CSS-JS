@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- error -->
+    <!-- <button onclick="()">Click Here Self Invoking Function</button> -->
+    <script>
+
+        //Passing a Function as a values
+
+        // var sum=(a,b)=>{
+        //     return a+b;
+        // }
+
+
+        // console.log(sum(20,30));
+        // var res=sum(0,23)+100+200+400;
+        // console.log(res);
+
+
+        // ***************************************************************
+
+
+        // self_invoking function
+
+        //no need to call function  -  call ()
+        // use ()
+
+        // (
+
+        // function()
+        // {
+        //     console.log("Hello Self_Invoking Function !!");
+        //     alert("Hello Self Invoking Function");
+        // }) ()
+
+
+
+        // ***********************************************************************
+
+
+        // Callback Function-  passing a function to another a function as a arguments 
+
+
+        // eg.
+
+
+        // function A()
+        // {
+        //     console.log("Function A Called !!");
+
+        //     B();
+        // }
+
+
+        // function B()
+        // {
+        //     console.log("Function B Called  !! ");
+        // }
+
+        // A();
+
+
+        // ************************************************
+
+
+        function A() {
+            console.log("Function A Called !!");
+        }
+
+        // passing a parameter for above function
+        function B(callback) {
+            //function call
+            callback();
+        }
+
+        // passing 'A' function to 'B' function as a arguments
+        B(A);
+
+
+
+        // ************************************************
+
+        function A() {
+            console.log("Function A Called !!");
+        }
+
+        function C()
+        {
+            console.log("second Callback !!");
+        }
+
+        // passing a parameter for above function
+        function B(callback,callback2) {
+            //function call
+            callback();
+            callback2();
+        }
+
+        // passing 'A' function to 'B' function as a arguments
+        B(A,C);
+
+        // **************************************************
+
+
+
+        function demo(a)
+        {
+            alert("Welcome "+a);
+        }
+
+        // demo("pratik");
+
+
+        // pass a parameter for above function
+        function demo2(callback)
+        {
+           callback("Pratik");
+        }
+        demo2(demo);
+
+
+        // ****************************************************
+
+
+
+        function greet(msg)
+        {
+            return msg;
+        }
+
+    //    document.write(greet("Hello Good Morning"));
+
+    var messege=function msg(name,callback)
+    {
+        var res=callback("Good Morning")+" "+name;
+        return res;
+
+    }
+
+   document.write(`<h1>${messege('Pratik',greet)}</h1>`) 
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

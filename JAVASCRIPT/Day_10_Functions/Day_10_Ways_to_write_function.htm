@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="data"></h1>
+    <!-- call function -->
+    <button onclick="demo()">Click Here</button>
+    <script>
+        // Ways to write function
+        // variable expression- function treat like as a any other variable
+
+
+        // var sum = function Addition() {
+        //     console.log(20 + 40);
+        // }
+        // sum();
+
+
+
+        //     var sum=function Addition(a,b,c)
+        //     {
+        //         var res=a+b+c;
+        //         return res;
+        //     }
+
+        //   console.log(sum(100,200,400));
+
+
+        //   *********************************************************************
+
+
+        // Anonymous Function-  no name to the function
+
+        var demo = function () {
+            document.getElementById('data').innerHTML = "Welcome To The JS Anonymous Function";
+        }
+
+
+        // *************************************************
+
+        // Arrow Function  also Fat Arrrow function
+        // Es-6 features
+        // Modern Way to write concise function
+        //no need to use function keyword
+
+        //no need to bind this keyword i.e refer to the current object
+
+        //we can write function in one line
+        //readble,easily writeable
+
+
+
+        // syntax
+
+
+        //1
+        // var mult = (a, b) => {
+        //     return a * b;
+        // }
+        // console.log(mult(10,5));
+
+        //2
+
+        // must use {} while return;
+        var mult=(a,b)=> { return a*b;}
+        console.log(mult(10,30));
+
+
+        //3- single line function declaration
+
+        var add=(a,b)=>console.log(a+b);
+        add(100,50);
+
+
+        //4-
+
+        var demo=a=>
+        {
+            console.log("Before Return Keyword Data");
+            return a;
+
+            // after return data function will stopping execution
+            console.log("After Return Keyword Data");
+        }
+    
+        console.log(demo("hello Pratik"));
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
