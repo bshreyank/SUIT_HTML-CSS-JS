@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        const obj_1 = {
+            id: 123,
+            name: 'Abc',
+            position: 'Full_Time',
+            role: 'React Developer',
+            mobile_no: 9876543210,
+
+            mobile_no: 1234567890,
+        }
+
+        console.log(obj_1);
+
+        // we can update object values;
+        obj_1.name = "Pratik";
+        console.log(obj_1);
+
+
+        console.log("******************************");
+
+
+        // ***************************************************************************
+
+
+        // nested object
+
+
+        const obj_2 = {
+            name: 'Abc',
+            age: 25,
+            skills: 'React',
+
+            position: {
+                pos_1: 'React',
+                pos_2: 'Angular',
+                pos_3: 'Mern Stack',
+            },
+
+            id: 23,
+
+        }
+
+
+        console.log(obj_2);
+        console.log(obj_2.position);
+        console.log(obj_2.position.pos_1);
+
+
+        console.log("******************************");
+
+
+
+        // *********************************************
+
+        //functions in a object;
+
+        const obj_3 = {
+            name: 'Abc',
+            age: 25,
+            skills: 'React',
+
+
+            //Method-  when we declared or pass function in object (key) property
+            emp_details: function () {
+                console.log(`Your Name is ${this.name} And Your Age Is ${this.age} And Your Skill is ${this.skills}`);
+            }
+
+
+        }
+
+
+        console.log(obj_3);
+
+        console.log(obj_3.emp_details);//function defination
+        console.log(obj_3.emp_details());//output
+
+
+
+        console.log("***************************");
+
+
+        // ****************************************************************
+
+        // Iterates object
+
+
+        const obj_4 = {
+            name: 'Akashay',
+            id: 120,
+            age: 20,
+        }
+
+        console.log(obj_4);
+
+
+        // iterate using for-in
+
+        for (let keys in obj_4) {
+            // console.log(keys);
+            console.log(keys + " => " + obj_4[keys]);
+        }
+
+
+        console.log("***************************");
+        // **********************************************
+
+        //Iterate Nested Object
+
+        const obj_5 = {
+
+            id: '123',
+            name: 'Shreyank',
+            mobile: 9876543210,
+
+
+            position: {
+                pos_1: 'React',
+                pos_2: 'Angular',
+                pos_3: 'Full Stack'
+            }
+
+        }
+
+
+
+        // **********************************************************
+        //iterate
+
+        for (let x in obj_5.position) {
+            console.log(x + " => " + obj_5.position[x]);
+        }
+
+
+
+
+        console.log("************************");
+        // ****************************************************
+
+
+
+        // Array as a Object
+        // var arr=new Array(10,30,40);
+        console.log(arr);
+        // ****************************************************
+
+
+
+        // Array Object
+
+
+        const emp_details = [
+
+            {
+                emp_id: 1,
+                name: 'A',
+                age: 20,
+
+            },
+            {
+                emp_id: 2,
+                name: 'B',
+                age: 25,
+
+            },
+            {
+                emp_id: 3,
+                name: 'C',
+                age: 30,
+
+            }
+
+        ]
+
+        console.log(emp_details);
+        console.log(emp_details[0]);
+
+        console.log("****************************");
+
+
+        // iterate
+
+        // for of- return both key and value data
+
+        // for(let key of emp_details)
+        // {
+        //     // console.log(keys);
+        //     // console.log(emp_details);
+        // }
+
+        console.log("**********************");
+
+
+        // *************************************************
+
+        //Using for in
+
+        for (let key in emp_details) {
+            // console.log(key);
+            console.log(emp_details[key]);
+
+
+            //But we want data in key value pair
+
+            console.log(key + " " + emp_details[key]);//[Object object]
+        }
+
+
+        console.log("*********************");
+
+
+        // *****************************************************
+
+
+        //Solution for Array object  using for in
+
+
+        for (let keys2 in emp_details) {
+            // console.log(console.log(res));
+            // console.log(console.log(emp_details[keys2]));//return Object object
+
+
+            // Object object
+            var data = emp_details[keys2];
+
+            for (let res in data) {
+
+                // console.log(res);//return keys
+                console.log(res + " : " + data[res]);//
+
+            }
+
+
+            // if(data.hasOwnProperty(res))
+            // {
+            // console.log(res+ " : "+data[res]);//
+
+            // }
+
+        }
+        
+
+        console.log("*****************")
+
+
+        // *******************************************************************
+
+        const obj_6 = {
+            f_name: 'XYZ',
+            l_name: 'ABC',
+            phone: 9876543210,
+
+        }
+
+        console.log(obj_6);
+
+
+        // Methods-
+
+        // keys-  return an Array of given object with property name 
+        console.log(Object.keys(obj_6));//
+
+        console.log("************************");
+
+
+
+        //values-return an array of given object with values
+        console.log(Object.values(obj_6));//
+
+        console.log("************************");
+
+
+
+        //entries-  return an array of given object with key and value
+        console.log(Object.entries(obj_6));//
+
+
+
+        // **********************************************************************
+
+
+
+        //is-compare similar values and return true or false
+
+        console.log(Object.is("1", 1));//
+        console.log(Object.is("1", "1"));//
+        console.log(Object.is(NaN, NaN));//
+        console.log(Object.is(NaN, "hello"));//
+
+
+
+
+        console.log(Object.isExtensible(obj_6));//true
+        console.log(Object.isSealed(obj_6));//return true when we can't modified
+        //
+
+
+        // Object.assign()
+        // Object.create()
+        // Object.freeze()
+        // Object.getOwnPropertyNames()
+        // Object.getOwnPropertySymbols()
+        // Object.getOwnPropertyDescriptor()
+        // Object.isExtensible()
+        // Object.isFrozen()
+        // Object.isSealed()
+        // Object.is()
+        // Object.preventExtensions()
+        // Object.setPrototypeOf ()
+
+    </script>
+
+</body>
+
+</html>
