@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Object -->
+
+    <!-- Everything In A JS is  A Object -->
+    <!-- Is A King Of JS -->
+    <!-- Holda the data -->
+    <!-- Is A Entity having properties and methods -->
+
+
+    <!-- 7 types -->
+
+
+    <!-- primit-String.,number,boolean,null,undefined
+
+    Non_prim-  Array and Object -->
+
+    <!-- 
+    Array as A object
+    Boolean As a object
+    Number As a object
+    String As a object -->
+
+
+    <script>
+
+
+        // var no=new Number(20);
+
+        // var arr=[]
+        // var arr=new Array();
+
+        // var true=new Boolean()
+
+
+        // ************************************************************
+
+
+        // Stored value in Key:value pair
+
+
+        // ****************************************************
+
+
+        // Ways To write Object in JS
+
+        //1 -  Object literal way
+
+
+        const obj1 = {
+            name: 'Akash',
+            age: 20,
+            Skills: 'ReactJS',
+            mobile: 987654321,
+
+        }
+
+
+        console.log(obj1);
+
+        // Object Accessed through Named Indexing
+        console.log(obj1.name);
+
+
+
+        // **********************************************************************************
+
+        //2-    Creating instance of object with new Keyword
+
+        var obj=new Object()
+        
+        obj.name="Akash";
+        obj.age=23;
+        obj.Skills="React";
+
+        console.log(obj);
+        console.log(obj.age);
+
+
+// *********************************************************************************************
+
+        //3 Using Object Constructor
+
+        //calling itself
+
+        function emp(name,age,skills)
+
+        {
+            this.name=name;
+            this.age=age;
+            this.skills=skills;
+
+        }
+        var res=new emp("Akshay",25,"MERN Stack");
+        console.log(res);
+
+        // *********************************************************************************************************
+
+        // we can update object values
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

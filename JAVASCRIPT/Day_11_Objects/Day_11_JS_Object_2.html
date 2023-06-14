@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const obj = {
+            id: 1,
+            name: 'ABC',
+            age: 25,
+            position: 'Frontend Developer',
+        }
+
+        console.log(obj);
+
+        // we can update object values
+
+        obj.name = "XYZ";
+        console.log(obj);
+
+
+        // ***********************************************
+
+        // Iterates Object-
+
+        // for-in- Return key and value
+
+        for (let x in obj) {
+            console.log(x + " => " + obj[x]);
+            // console.log(obj);
+
+        }
+
+        // ***********************************************
+        // nested object-
+
+
+
+        const obj3 = {
+
+            emp_id: 123,
+            emp_role: "Full_time",
+            emp_position: {
+                pos_1: 'Mern Stack',
+                pos_2: 'Full Stack',
+                pos_3: 'React Dev'
+            }
+        }
+        console.log(obj3.emp_id);
+        console.log(obj3.emp_position);
+        console.log(obj3.emp_position.pos_1);
+
+        // Interate
+
+        for (let key in obj3) {
+            console.log(`${key} :  ${obj3[key]}`);
+        }
+
+        //nested obj
+
+        console.log("**************************")
+
+        for (let x in obj3.emp_position) {
+            console.log(`${x}: ${obj3.emp_position[x]}`);
+        }
+
+
+
+        // *********************************************************
+        // Array as a Object
+
+        const arr = [
+
+            {
+                id: 1,
+                name: 'A',
+
+            },
+            {
+                id: 2,
+                name: 'B',
+
+            },
+            {
+                id: 3,
+                name: 'C',
+
+            }
+        ]
+        console.log("****************")
+
+
+        console.log(arr);
+
+        console.log("****************")
+
+        console.log(arr[0]);
+
+        console.log("****************")
+
+        console.log(arr[0].name);
+
+
+
+        // iterate Array object
+
+
+        // for of -return array object in key value 
+        // for(let x of arr)
+        // {
+        //     console.log(x);
+        // }
+
+
+        // 
+
+        console.log("*************");
+
+        for (let x in arr) {
+            // only return key
+            // console.log(x);
+
+            //
+            // console.log(x+" :"+arr[x]);
+
+            var data = arr[x];
+
+            for (let y in data) {
+                // console.log(data[y]);
+
+                    console.log(y+ " => "+data[y]);
+
+
+                // if(data.hasOwnProperty(y))
+                // {
+                //     console.log(y+ " => "+data[y]);
+                // }
+            }
+
+        }
+
+
+        // ******************************************************************************
+
+
+        const obj_4 = {
+            stud_name: 'Abc',
+            stud_id: 123,
+
+        }
+
+        console.log(obj_4);
+
+        console.log("*******************");
+
+
+        // ***********************************
+        // Object methods
+
+        //keys- return an array of given object with property name
+        console.log(Object.keys(obj_4));
+
+
+        //values- return an array of given object with values
+        console.log(Object.values(obj_4));
+
+        //entries- return an Array of given object with Key and Values
+        console.log(Object.entries(obj_4));
+
+
+        // Others- For Your Regerence
+
+
+        // Object.is()//compare two values and return true or false 
+        // eg
+
+        console.log(Object.is('1','1'));//True
+        console.log(Object.is(NaN,NaN));//True
+        console.log(Object.is(NaN,"A"));//false
+
+
+        // Object.assign()
+        // Object.create()
+        // Object.freeze()
+        // Object.getOwnPropertyNames()
+        // Object.getOwnPropertySymbols()
+        // Object.getOwnPropertyDescriptor()
+        // Object.isExtensible()
+        // Object.isFrozen()
+        // Object.isSealed()
+        // Object.is()
+        // Object.preventExtensions()
+        // // Object.setPrototypeOf ()
+
+    </script>
+
+</body>
+
+</html>
