@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Array Methods -->
+
+    <!-- length -->
+
+    <script>
+
+
+        var arr = [10, 20, 30, 40, 50, 60];
+        console.log(arr);
+
+
+        console.log(arr.length);
+
+        //
+        // push- add element in  last index and change original array 
+        // 
+
+        arr.push(70);
+        console.log(arr);
+        console.log(arr.length);
+
+
+        console.log("***************************");
+
+
+        // pop-  remove last index element
+
+        arr.pop();
+        arr.pop();
+        arr.pop();
+
+        console.log(arr);
+        console.log(arr.length);
+
+        var a = arr.pop();
+        console.log(a);
+
+
+        console.log("***************************");
+
+        // ******************************************************
+
+        // Now add and remove element on first index
+
+        // unshift-  add element to first index
+        arr.unshift(5);
+        console.log(arr);
+
+
+        // shift- remove element from first index
+        var b = arr.shift();
+        console.log(b);
+
+        console.log(arr);
+
+
+        console.log("***************************************");
+
+        // ***********************************************************************
+
+
+        // Extract part of Array
+        //slice-  extract part of string or array and return new array;
+
+        // syntax
+
+        // slice(start,end);
+
+        // ignored last index
+
+
+
+
+        var data = ["Pratik", "Akash", "Rohan", "vaibhav", "Shreyank", "Shardul", "XYZ", "Sumit"];
+
+        console.log(data);
+
+        console.log("********************************");
+
+        console.log(data.slice());
+
+        console.log("********************************");
+
+        console.log(data.slice(0, data.length));
+
+        console.log("**************************************************")
+        // 
+        console.log(data.slice(1, 5));
+        console.log(data.slice(3, 8));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

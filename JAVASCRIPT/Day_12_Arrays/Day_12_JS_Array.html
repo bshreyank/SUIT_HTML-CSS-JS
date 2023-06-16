@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Array -->
+
+    <!-- Collection of similar elements or differnet type of elements -->
+
+    <!-- IN JS is a special type of Object -->
+
+    <!-- we can stored  multiple type of data in a single varibale -->
+
+
+    <!-- Array accessed through number indexing -->
+    <!-- Starts from 0 -->
+
+
+
+    <script>
+
+
+        // <!-- Ways to defined Array -->
+
+        // <!-- Literal way -->
+
+        let arr = [10, 20, "Pratik", true, 40, 50];
+        console.log(arr);
+        console.log(typeof arr);
+
+
+        console.log(arr[0]);//10
+        console.log(arr[4]);//40
+
+        // ************************************************************
+        //2
+
+        // creating instance of an Array
+        let arr_1 = new Array("A", "B", "C", "D");
+        console.log(arr_1);
+        console.log(typeof arr_1);
+
+        console.log(arr_1[0]);//A
+
+        console.log(arr_1.length);
+
+
+        // ******************************
+
+
+        // for of- return indexing value
+        // iterate through array
+
+        for (let keys of arr) {
+            console.log(keys);
+            // console.log(arr);
+        }
+
+        console.log("*************************");
+
+        // ************************************************
+        // for loop
+        for (let i = 0; i < arr.length; i++) {
+            console.log(`${i} => ${arr[i]}`);//10 20
+        }
+
+
+        // ***********************************************
+
+
+        console.log("**************************8")
+        // Create new Array and push values
+
+        // Push 1-50
+        var array = [];
+        for (let i = 0; i <= 50; i++) {
+            // console.log(arr_3[i]);
+            array[i] = i;
+        }
+
+        console.log(array);
+        // console.log(array.length);
+        // console.log(array);
+
+
+        // console.log("*****************************")
+
+
+        // *********************************************
+
+        var array = [];
+        for (let i = 0; i < 50; i++) {
+            // console.log(arr_3[i]);
+            array[i] = i;
+        }
+
+        console.log(array);
+
+        // *************************************
+
+        // Right Approach 
+
+        var array = new Array();
+        var ii = 0;
+        for (let i = 1; i <= 50; i++) {
+            // array[ii]=i; //1,2,5...50
+            // ii++;
+
+            // or
+            array[i - 1] = i;
+        }
+
+        console.log(array);
+
+        console.log("*************************************")
+
+
+        // *******************************************
+
+        // Push 1-100 Even No in an Array
+
+        var even_no = new Array()
+        var ii = 0;
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                even_no[ii] = i;
+                ii++; //
+            }
+
+        }
+
+        console.log(even_no); //0 //2
+
+
+
+        // **********************************************************
+
+
+        // Array Object
+
+
+        // var data=[
+        //     {
+        //         name:'Pratik',
+        //         age:25,
+        //     },
+        //     {
+        //         name:'Abc',
+        //         age:20,
+        //     }
+        // ]
+
+        // console.log(data);
+        // console.log(data[1]);
+
+
+        // ****************************************************
+
+
+        // Array in a Object
+
+        const obj = {
+            name: 'XYZ',
+            id: 123,
+            stud: ["Lalit", "Akash", "vaibhav", "geetanjali", "Abc"],
+        }
+
+        console.log(obj);
+
+        console.log(obj.stud[2]);
+
+
+        // ***************************************************
+
+
+        const obj_2 = {
+            emp: 'John',
+            department: [{ dept_name: 'IT', emp_count: 50 }],
+            user: [10, { user_name: 'Abc' }, { user_name: 'XYZ' }],
+
+        }
+
+        console.log(obj_2);
+        console.log("*********************************");
+
+        console.log(obj_2.department);
+        console.log("EMP Count Is: "+ obj_2.department[0].emp_count);
+
+
+        console.log("****************************");
+        // I want User_name- XYZ
+        console.log("User Name ="+obj_2.user[2].user_name);//XYZ
+
+        // **********************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
