@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* HEADER =========================================================== */
 #header-info-1, #header-info-2{
     font-family:Roboto;
                   font-size:12px;
@@ -27,6 +34,35 @@
     color: #0D2D3E;
     margin-left: 30px;
 }
+
+/* Review count ===============================================================================*/
+  /* *********** | Review Count |************  */
+  .count-box {
+    border: 10px solid #fff;
+    padding: 30px 30px;
+    margin-top: -50px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    outline: 1px solid #cfcfcf;
+  }
+  
+  .count-box h1 {
+    text-align: center;
+  }
+  .count-box-2 h1 {
+    text-align: center;
+  }
+  .count-box-2 {
+    border: 10px solid white;
+    padding: 30px 30px;
+    margin-top: -50px;
+    background-color: #ff2143;
+    margin-bottom: 100px;
+    color: #fff;
+  }
+  .review-count {
+    background-color: #ffffff5e;
+  }
 
 /* Footer =============================================================*/
 
@@ -110,4 +146,5 @@ body {
         color: #ffffff; }
         .footer-39201 .social li a:hover {
           color: #614ad3; }
-  
+
+
