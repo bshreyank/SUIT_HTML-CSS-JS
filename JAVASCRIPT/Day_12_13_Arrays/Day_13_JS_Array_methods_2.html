@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // concat-  to merge the 2 or more Array or string
+
+
+        var arr1 = [10, 20, 30,];
+        var arr2 = [40, 50, 60];
+        var arr3 = [70, 80, 100];
+        console.log(arr1 + arr2);
+
+        var res = arr1.concat(arr2, arr3);
+        console.log(res);
+        // *****************************************************
+
+
+        // reverse- to reverse an array
+
+
+        // console.log(res.reverse());
+        console.log("***************");
+
+
+        // custom logic
+        for (let i = res.length - 1; i >= 0; i--) {
+            console.log(res[i]);
+        }
+
+        // ******************************************************
+
+
+        // sort-   sort for alphatbets
+
+        var data = ["A", "Z", "C", "X", "D", "F"];
+        var b = [10, 20, 30, 100, 30, 15, 35, 23];
+
+        console.log(data.sort());
+        console.log(b.sort());
+
+
+
+        console.log("**************");
+
+
+
+        // Compare function-  
+
+        // console.log(b.sort(function(x,y){return x-y}));
+        console.log(b.sort(function (x, y) { return y - x }));
+
+
+        console.log("***************");
+
+        // ***********************************************************************
+
+
+        // isArray
+
+        var data = ["A", "B", "C", 10, 30, 40, true, null];
+        // var data="Abc";
+
+        console.log(Array.isArray(data));
+
+
+
+        // *******************************************************
+
+
+
+        // keys-  create an new array 
+
+        // return keys of array
+
+        let txt = " ";
+
+        const res1 = data.keys();
+
+        for (let keys of data) {
+            // console.log(keys);//
+            txt += " " + keys;
+        }
+
+        console.log(txt);
+
+
+        // ******************************************
+
+        // indexOf()-  return index of specfic element
+
+        var arr_3 = [10, 20, 30, 50, 60, 100];
+        console.log(arr_3[2]);//30
+        console.log(arr_3.indexOf(30));//2
+
+
+        console.log("****************");
+
+
+        var user = ["Pratik", "Rohan", "Akash", "Rohan"];
+
+        console.log(user.indexOf("Rohan"));//1
+
+        // lastIndexOf-  return last index of specfic element
+        console.log(user.lastIndexOf("Rohan"));//3
+
+
+
+        // *******************************************
+
+        // at-   return element on specfic index
+
+        console.log(user.at(2));//Akash
+        console.log(user[2]);//Akash
+
+
+        console.log("*********")
+
+        // *********************************************
+
+
+
+        // join=  return into string with comma separted value
+
+
+        var stud = ["A", "B", "C"];
+
+        // console.log(stud);
+        console.log(stud.join());
+        console.log(stud.join(" "));
+        console.log(stud.join(" * "));
+
+
+        // 
+
+
+        // toString()- convert array to string with comma separted value
+
+        var emp_data = ["Lalit", "Vaibhav", "XYZ", "ABC"];
+        console.log(emp_data.toString());
+        console.log(emp_data.join("#"));
+
+        // emp_data.toString().join('/');
+        // console.log(emp_data); //error
+
+
+
+
+        // ************************************************
+
+
+        // fill-  fill all element with specfic element in an Array
+        console.log(emp_data.fill("Shubham"));
+
+
+
+
+
+        // ***************************************************
+
+
+        // valueOf()-  return array itself
+        //by default return
+
+
+        console.log(emp_data);
+        console.log(emp_data.valueOf());
+
+
+        // ****************************************************
+
+        // Some and Every
+
+
+
+        // check the condition which passing in function
+
+        //pass through some conditions
+        // Every- return true when all conditions becomes true either false
+
+        var marks = [55,40, 60, 80, 95, 75, 65, 85,20];
+
+        var res=marks.every((val)=> {
+
+            return val>=35;
+        });
+
+        console.log(res); //true- pass
+
+
+        // <!-- some-  return true when only one condition becomes true -->
+
+    var res_3=marks.some((value)=>{
+
+        return value>=35;
+    });
+    
+
+    console.log(res_3);// true
+
+
+    console.log("**********")
+
+    // *********************************************************************
+// 
+    // filter and find
+
+
+    // check all conditions and return an array elements 
+    // filter data with some conditions
+
+    var stud_marks=[30,50,78,80,90,95];
+
+    var res_4=marks.filter((val,i,array)=>{
+        return val>=35;
+
+        // return i;
+        // return array;
+    })
+
+    console.log(res_4);
+
+
+
+
+    // find-  return an array element with first matching value
+
+    var res_5=stud_marks.find((val)=>{
+        return val>=35;
+    })
+
+
+    console.log(res_5);
+
+
+    // ***********************************************************
+
+// reduce-   return multiple values into single value from an array
+
+//         call a reduce function
+//         not work on empty array
+//         doesnt affect to original array
+//left to right execution
+
+//runs/iterate on each array element to produce single  value
+
+// left to right
+
+const numbers=[10,30,40,20,15,50];
+
+const res_6=numbers.reduce((prevValue,currentvalue,currentindex,array)=>{
+
+
+    return prevValue+=currentvalue;
+    // return prevValue+currentvalue;
+    
+
+
+
+    // return currentvalue;
+    // return currentindex;
+    // return array;
+
+
+});
+
+
+console.log(res_6);
+console.log("*********************");
+
+
+
+// reduceRight-  right to left
+
+
+
+
+// ********************************************
+
+
+
+
+// includes
+
+// includes(search_element)
+// includes(search_element,from where)
+
+var inc=[10,20,40,20,30,60];
+console.log(inc.includes("10"));
+console.log(inc.includes(10));
+console.log(inc.includes(20,3));
+console.log(inc.includes(20,5));
+
+
+// ******************************
+// entries-   
+
+const data3=inc.entries();
+for(let x of data3)
+{
+    // document.write(x)
+    console.log(x);
+}
+
+
+// using for in
+for(let x in inc)
+{
+    // document.write(x)
+    console.log(x+"  " +inc[x]);
+    
+}
+
+//Map 
+//For each
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
