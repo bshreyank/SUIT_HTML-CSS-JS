@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // For each -  calls a function and iterate over  element of an array
+
+        // syntax
+
+        const arr = [10, 20, 30, 40, 50];
+
+        // arr.forEach(function(value,index,array){
+
+        // console.log(`${value}`);
+        // console.log(`${index}`);
+        // console.log(`${array}`);
+        //     console.log(`${index} =>   ${value}`)
+
+        // });
+
+
+        // const demo=(value,index)=>{
+        //     console.log(value+" "+index);
+        // }
+
+        // arr.forEach(demo);
+
+
+
+
+
+
+
+        // **************************************
+
+        //    for(let x of arr)
+        //    {
+        //     console.log(x);
+        //    }
+
+
+
+        // ******************************************************
+
+        // Map-  create a new array by calling function
+
+
+        const no = [5, 10, 20];
+
+
+
+        // no.map((item,index,array)=>{
+
+        //     console.log(item);
+        //     console.log(index);
+        // })
+
+
+        // Separate calling function
+
+        function map_demo(value, index) {
+
+            console.log(`${index} = ${value}`);
+            // return value + 10;
+
+        }
+
+
+         no.map(map_demo);
+        //    console.log(no.map(map_demo));
+        //
+
+
+
+        // **********************************************************
+
+
+        // Map array object
+
+
+        const data = [
+            {
+                name: 'akash',
+                age: 20,
+                email: 'akash@gmail.com'
+            },
+            {
+                name: 'vaibhav',
+                age: 23,
+                email: 'v@gmail.com'
+            },
+            {
+                name: 'rohan',
+                age: 25,
+                email: 'r@gmail.com'
+            },
+
+        ]
+
+
+        //for in
+        //for
+        //for of
+
+
+        data.map(value => {
+            console.log(value);
+        })
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
