@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- string - store a single value-->
+
+
+    <script>
+
+
+        var name = "Pratik";
+        console.log(name);
+
+
+        // slice(start,end)-  extrat part of string
+
+        console.log(name.slice());//pratik
+        console.log(name.slice(0, name.length));//pratik
+        console.log(name.slice(2, 5));//ati
+        console.log(name.slice(2, 5));//ati
+        console.log(name.slice(-3, -2));//t
+        console.log(name.slice(-4, -2));//at
+
+
+        // substr-  last element not remove
+        console.log(name.substr(2, 5));//atik
+        console.log(name.substr(0, name.length));//atik
+        console.log(name.substr(0, 2));//pr
+        console.log(name.substr(2, 4));//atik
+
+
+        // doesnt work on -ve index
+        console.log(name.substr(-4, -2));//
+
+
+
+
+        // *******************************************
+
+        // splice - add or remove element from an array
+
+        // splice(start,length(how many elements U wants to remove))
+
+        //  Works on Array
+
+        //return new array
+
+        const arr = [100, 200, 400, 450, 500, 600, 750, 860];
+
+        // console.log(arr.splice());//array becomes empty
+        // console.log(arr.splice(1,4));//return new array
+
+
+        // console.log(arr);
+
+
+
+        // add
+
+
+        arr.splice(2, 0, 2000, 3000);
+        console.log(arr);
+
+
+        arr.splice(2, 2, 4500, 3400,5000);
+        console.log(arr);
+
+
+
+        // ******************************************************
+
+
+        // substring- remove
+
+        //ignore last index
+        const str = "ABCDEF";
+        console.log(str.substring(0, 4));//BCD
+        console.log(str.substring(0, str.length));//ABCDEF
+
+
+
+
+        // ****************************************************
+
+
+
+
+
+
+        const Tech = "Reactjs";
+        const Tech_2 = "Next_JS";
+
+
+        console.log(Tech.toUpperCase());
+        console.log(Tech.toLowerCase());
+        console.log(Tech_2.concat(Tech));
+
+
+        console.log(Tech.length);
+
+        // charAt
+        console.log(Tech.charAt(2));//a
+
+        //charcodeAt
+
+        console.log(Tech.charCodeAt(2));//97  a-97 z-122  A-65 Z-90
+
+
+
+        // trim-  remove empty space
+
+        //return a new string
+
+        const fname = "   Lalit   ";
+        console.log(fname);
+
+        console.log(fname.length);
+        // console.log(fname.trimStart());
+        var res = fname.trimStart();
+        console.log(res);
+        console.log(res.length);
+
+        var res_1 = fname.trimEnd();
+        console.log(res_1);
+        console.log(res_1.length);
+
+
+
+        var res_3 = fname.trim();
+
+        console.log(res_3);
+        console.log(res_3.length);
+
+
+
+        // *******************************************************************
+
+
+        let a = "10";
+        // padStart(max_length,element)
+
+        console.log(a.padStart(10, "0"));
+        console.log(a.padEnd(5, "0"));
+
+        console.log(a.padStart(10,"#"));
+
+
+        // *******************************************************
+
+
+
+        // indexOf()
+        //lastIndexOf()
+
+
+
+        const data="ABCBDEFAG";
+        console.log(data.indexOf('A'));//0
+        console.log(data.lastIndexOf('A'));//7
+
+
+        console.log(data.lastIndexOf('a'));//-1
+        console.log(data.lastIndexOf('p'));//-1
+
+
+
+        // *****************************************
+
+
+
+        // replace-  replace and return a new string
+
+
+        const ab="ABC";
+
+        console.log(ab.replace("AB","Pratik"));
+
+        console.log(ab);
+
+
+        // ****************************************
+
+        // split-  convert Array into String
+
+
+        const sample_data="Hello Welcome";
+
+
+        console.log(sample_data.split());
+
+        console.log(sample_data.split(" "));
+
+        // *****************************************************
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
