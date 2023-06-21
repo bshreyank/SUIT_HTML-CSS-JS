@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+
+        .box_1 {
+            height: 300px;
+            width: 30%;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Events- Peforming some activity on users action
+        - events that browser does something  on users activity
+    
+    
+    Types-  MouseEvents
+            Keyboard events
+            window events- onload,onresie,onscroll
+            Form events- onchange,onfocus,onselect,onsubmit
+    -->
+
+
+    <!-- MouseEvents -->
+
+
+
+
+
+    <div class="box_1" id="demo" onmouseover="demo_3()" onmouseleave="demo_4()" onmouseup="demo_5()"
+        onmousedown="demo_6()"   onmousemove="demo_7()"  onmouseenter="demo_8()" ></div>
+
+    <br><br>
+    <button onclick="demo()" ondblclick="demo_1()" oncontextmenu="demo_2()">Click Here To Change Color</button>
+
+
+
+    <script>
+        // document.getElementById("demo").style.backgroundColor = "pink"
+
+        // onclick
+        function demo() {
+            document.getElementById("demo").style.backgroundColor = "pink"
+        }
+
+
+        //ondblclick
+        const demo_1 = () => {
+            alert("Double clicked !!")
+            document.getElementById('demo').style.backgroundColor = "orange";
+        }
+
+
+        //oncontextmenu-when we right click on mouse
+
+        const demo_2 = function () {
+            document.getElementById('demo').style.backgroundColor = "violet";
+        }
+
+
+
+
+
+        // ****************************************************
+
+
+        // onmouseover- when mouse hover on it
+        const demo_3 = function demo() {
+            document.getElementById('demo').style.backgroundColor = "maroon";
+            document.getElementById('demo').style.borderRadius = "50px";
+        }
+
+        //onmouseleave- when mouse leave from specific element
+        const demo_4 = () => {
+
+            document.getElementById('demo').style.borderRadius = "0px";
+            document.getElementById('demo').style.backgroundColor = "blue";
+        }
+
+
+        // onmouseup
+
+        function demo_5() {
+
+            document.getElementById('demo').style.backgroundColor = "navy";
+        }
+
+
+
+        // onmousedown
+        function demo_6() {
+            document.getElementById('demo').style.backgroundColor = "black";
+        }
+
+
+
+        //onmousemove- when mouse movement takes place
+
+        function demo_7() {
+            document.getElementById('demo').style.backgroundColor = "red";
+
+        }
+
+        // onmousescroll
+
+
+        //onmouseenter
+
+        function demo_8()
+        {
+            document.getElementById('demo').style.backgroundColor="yellow";
+        }
+
+    </script>
+
+     <!-- Events required function so we can perform action whenever we want -->
+
+
+
+
+
+</body>
+
+</html>
