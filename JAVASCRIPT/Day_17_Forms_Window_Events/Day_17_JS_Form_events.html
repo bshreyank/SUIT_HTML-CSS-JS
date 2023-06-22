@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <hr><br><br>
+    <label for=""><b>Enter your Email: </b></label>
+    <input type="text" placeholder="enter email here" id="email_id" name="emaiL_id" onfocus="demo_1()"
+        onblur="demo_2()">
+
+
+
+    <hr><br><br>
+
+
+
+    <!-- demo -->
+    <input type="text" name="fname" id="fname" placeholder="Enter First Name" onfocus="a1('lname')">
+    <input type="text" name="fname" id="lname" placeholder="Enter First Name" onfocus="a2('fname')">
+
+
+
+
+
+    <hr>
+    <hr>
+    <hr>
+    <br><br>
+
+
+    <!-- onchange -->
+    <label for=""><b>Select Your Education: </b></label>
+    <select name="edu" id="edu" onchange="demo_3()">
+        <option value="Select">Select</option>
+        <option value="BE/BTECH">BE/BTECH</option>
+        <option value="ME/MTECH">ME/MTECH</option>
+        <option value="Other">Other</option>
+    </select>
+
+
+    <hr><br><br>
+    <!-- onselect -->
+
+    <hr>
+
+    <!-- <form action="" onsubmit="return confirm('Are You Sure ?')"> -->
+    <form action="" onsubmit="submit_form()">
+        <label for=""><b>Enter Your Name:</b></label>
+        <input type="text" name="" id="data" onselect="alert('You Selected '+data.value)">
+
+        <button type="submit">Save Form</button>
+
+    </form>
+
+    <hr>
+
+
+
+
+
+
+
+    <script>
+
+
+        // Form Events-   onfocus, onblur,onsubmit,onchange,onselect
+
+
+        //onfocus()-   foucs on input field
+
+        const demo_1 = () => {
+            var a = document.getElementById('email_id');
+
+            a.style.backgroundColor = "orange";
+
+        }
+
+
+
+        //onblur
+
+        const demo_2 = () => {
+
+            email_id.style.backgroundColor = "pink";
+        }
+
+
+        // ******************************************************************************************
+
+        // i want to change color alternate
+
+
+        function a1(data) {
+            var a = document.getElementById(data);
+            a.style.backgroundColor = "navy";
+        }
+
+        function a2(data) {
+            var a = document.getElementById(data);
+            a.style.backgroundColor = "pink";
+
+        }
+
+
+        // ***************************************************
+
+        // onselect- when we select the value
+
+
+        const demo_3 = function demo() {
+            var res = document.getElementById('edu').value;
+            alert(res);
+
+
+        }
+
+
+
+
+        // ***************************************************
+
+
+        const submit_form = () => {
+            alert("Your Data is Successfully Submitted !!");
+            // console.log(data)
+
+            // document.write(data.value);
+
+
+
+            var a=document.getElementById('data').value;
+            // document.write(a);
+        // document.write(document.getElementById('data').value);
+
+
+        // data.value="";
+        // email.value="";
+
+
+
+
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
