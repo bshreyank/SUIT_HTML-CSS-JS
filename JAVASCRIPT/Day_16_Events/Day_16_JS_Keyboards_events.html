@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+
+<body onkeypress="demo()" onkeyup="demo_1()" onkeydown="demo_2()">
+
+    <!-- Keyboard events
+    
+    
+        onkeypress
+
+        onkeyup
+
+        onkeydown
+    
+    -->
+
+
+    <div class="container"> </div>
+
+
+
+    <!-- form -->
+
+    <hr>
+    <hr>
+    <hr><br><br>
+
+
+    <h3>Enter Your Name: </h3>
+    <br>
+    <input type="text" name="" id="data" placeholder="Enter Your Name" onkeyup="form_event()">
+
+    <br><br>
+
+
+    <h1 id="input_data"></h1>
+
+
+    <br><br>
+
+
+
+    <script>
+
+
+        // onkeypress- when button pressed
+        function demo() {
+
+            document.getElementsByClassName('container')[0].style.backgroundColor = "black";
+
+        }
+
+
+        // onkeyup-  when button release
+        function demo_1() {
+            document.getElementsByClassName('container')[0].style.backgroundColor = "navy";
+
+        }
+
+
+
+        // onkeydown-  work on arrow key ,ctrl,alt,backspace
+        function demo_2() {
+            document.getElementsByClassName('container')[0].style.backgroundColor = "maroon";
+
+        }
+
+
+
+        // **************************************************************
+
+
+
+
+
+        // onkeyup
+
+
+        const form_event = () => {
+            var a = document.getElementById('data').value;
+            // alert("hi");
+            // console.log(a);
+
+            document.getElementById('input_data').innerHTML=a;
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
