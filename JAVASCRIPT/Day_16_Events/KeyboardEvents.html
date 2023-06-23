@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 300px;
+            width: 300px;
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+
+
+<!-- onkeypress -->
+<!-- 
+<body onkeypress="demo()">
+    
+    <div class="container"> </div>
+
+    <script>
+        // onkeypress- The user presses a key (does not work on arrow key ,ctrl,alt,backspace)
+        function demo() {
+
+            document.getElementsByClassName('container')[0].style.backgroundColor = "black";
+
+        }
+    </script>
+
+</body> -->
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- onkeyup -->
+
+<!--     
+    <body onkeyup="demo_1()">
+    
+    <div class="container"> </div>
+
+    <script>
+        // onkeyup-  the user releases a key
+        function demo_1() 
+        {
+            document.getElementsByClassName('container')[0].style.backgroundColor = "blue";
+        }
+        
+    </script>
+
+</body> 
+ -->
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- onkeydown -->
+
+<body>
+    <h1>HTML DOM Events</h1>
+    <h2>The onkeydown Event</h2>
+    
+    <p>Press a key in the input field:</p>
+    
+    <input type="text" onkeydown="myFunction()">
+    
+    <p id="demo_2"></p>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("demo_2").innerHTML = "You pressed a key inside the input field";
+    }
+    </script>
+    
+    </body> 
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+</html>
