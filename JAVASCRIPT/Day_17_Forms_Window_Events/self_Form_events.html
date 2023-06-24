@@ -9,7 +9,20 @@
     
     <!-- Form Events - onfocus, onblur, onsubmit, onchange, onselect -->
 
-    
+    <label for=""><b>Enter your Email:</b></label>
+
+    <input type="text" placeholder="Enter Email Here" id="email_id" name="email_id" onfocus="demo_1()" />
+
+    <!-- onfocus() == focus on input field -->
+
+    <script>
+
+        const demo_1=()=>{
+            var a=document.getElementById('email_id');
+            a.style.backgroundColor="orange";
+        }
+
+    </script>
 
 </body>
 </html>
