@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <hr>
+    <form action="" name="formdata">
+
+
+        <label for="">Enter Your Email ID: </label>
+        <input type="email" name="email_id" id="email_id" onkeyup="UpdateData()">
+
+    </form>
+
+
+
+
+
+    <h1>Your Email Id : <span id="outputdata" class="abc"> <b> </b></span></h1>
+
+
+    <hr><br><br>
+
+    <input type="text" name="" id="" class="total" value="400">
+    <input type="text" name="" id="" class="total" value="500">
+    <input type="text" name="" id="" class="total" value="700">
+    <input type="text" name="" id="" class="total" value="1000">
+    <input type="text" name="" id="" class="total" value="5000">
+
+
+
+    <!-- calculate total -->
+
+
+
+    <br>
+    <hr>
+
+
+    <script>
+
+
+        const UpdateData = () => {
+
+
+            // var a=document.getElementById('email_id').value;
+            // var a=email_id.value;
+            var a = document.getElementsByName('email_id')[0].value;
+            // console.log(a);
+
+            // document.getElementById('outputdata').innerHTML=a;
+            // document.getElementsByClassName('abc')[0].innerHTML=a;
+            document.getElementsByTagName('span')[0].innerHTML = a;
+
+
+
+
+            var formdata = document.getElementsByName('formdata')[0].email_id.value;
+            console.log(formdata);
+
+
+
+        }
+
+
+        // ************************************************
+        // <!-- calculate total -->
+
+        var res = document.getElementsByClassName('total');
+        var sum = 0;
+        for (let i = 0; i < res.length; i++) {
+            // console.log(res[i].value);
+            sum += Number(res[i].value);
+        }
+
+
+        console.log("Total Sum Is: " + sum);
+
+
+// ****************************************
+document.querySelector('.classname')
+document.querySelector('#idname')
+document.querySelector('tagname')
+
+document.querySelector('.total');
+document.querySelectorAll('.total');
+
+
+
+
+    </script>
+</body>
+
+</html>

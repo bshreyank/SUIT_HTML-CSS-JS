@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- By ClassName,ByTagname, ByName -->
+
+
+    <!-- Access thorugh Array Indexing -->
+
+    <h2 class="data">Heading 1</h2>
+    <h2 class="data">Heading 2</h2>
+    <h2 class="data">Heading 3</h2>
+    <h2 class="data">Heading 4</h2>
+    <h2 class="data">Heading 5</h2>
+
+
+
+    <!-- **************************************************************************8 -->
+
+
+    <br>
+
+    <label for="">Enter Your Name: </label>
+    <input type="email" name="full_name" id="full_name" value="Pratik">
+    <br>
+    <script>
+
+        // <!-- Access thorugh Array Indexing -->
+
+        var res = document.getElementsByClassName('data');
+        console.log(res);
+
+        console.log(res[0].innerHTML);
+        console.log(res[3].innerHTML);
+
+
+
+        // console.log(res.innerHTML);
+
+        // iterate
+
+
+        for (let i = 0; i < res.length; i++) {
+            console.log(res[i].innerHTML);
+        }
+
+
+        //set
+
+
+        document.getElementsByClassName('data')[1].innerHTML = "ReactJS";
+
+        // *******************************************************
+
+
+        // ByTagName
+
+
+
+        var c = document.getElementsByTagName('h2')[1];
+
+
+        //get
+        console.log(c.innerHTML);
+
+
+
+        //
+
+        var d = document.getElementsByTagName('h2')[4];
+
+
+        //set
+
+        d.innerHTML = "MERN Stack";
+        console.log(d.innerHTML);
+
+
+// *****************************************************************************
+        //ByName
+
+
+
+        // var e=document.getElementsByName('full_name');
+        // var e=document.getElementsByName('full_name')[0];
+        var e=document.getElementsByName('full_name')[0];
+        // var e=document.getElementsByName('full_name')[0].value;
+
+        console.log(e);
+
+
+        //set
+        e.value="Vaibhav";
+
+
+
+        // *********************************************************************
+
+
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

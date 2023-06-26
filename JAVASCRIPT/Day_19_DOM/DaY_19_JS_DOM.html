@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- DOM IN JS
+    
+        hierachy of html element
+
+        Tree based structure of html content
+
+
+        used to access html document or xml document
+
+        i.e memory represenation of html content
+
+
+
+        document
+
+        html
+           head- meta data
+           title
+
+           body-img - src
+        
+
+
+           document- whole html page
+           object-  styles,tags,attributes
+
+           model-  tree based structure   
+    
+    
+    -->
+
+    <p id="data1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quia, tempora modi vitae, ipsum
+        voluptas culpa dolores veritatis quo in nihil vel natus, error dolore! Quis odio inventore repellendus
+        voluptates.</p>
+    <p id="data2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quia, tempora modi vitae, ipsum
+        voluptas culpa dolores veritatis quo in nihil vel natus, error dolore! Quis odio inventore repellendus
+        voluptates.</p>
+
+
+    <script>
+
+
+        var a = document;
+        console.log(a);
+        console.log(a.head);
+        console.log(a.body);
+
+
+        // ******************************************************8
+
+
+        // Method
+        //get
+        var b = document.getElementById('data1').innerHTML;
+        console.log(b);
+
+
+       //set
+       document.getElementById('data2').innerHTML="Akash";
+
+
+
+
+
+    //    *******************************************************************************8
+
+
+
+
+    </script>
+
+</body>
+
+</html>
