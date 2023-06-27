@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="data">    <b> hello Welcome In HTML DOM</b></p>
+
+
+
+    <script>
+
+        // innerHTML-   includes spacing and inside tag as it is
+
+        var res = document.getElementsByTagName('p')[0].innerHTML;
+        console.log(res);
+
+
+        // innerText-  excluding spacing and inside tag
+        var res2 = document.getElementById('data').innerText;
+        console.log(res2);
+
+
+
+        // outerHTML- return complete tag
+        var res3 = document.querySelector('#data').outerHTML;
+        console.log(res3);
+
+
+
+        //outerText-excluding spacing and inside tag
+
+        // var res4=document.getElementById('data').outerText;
+        // console.log(res4);
+
+
+     
+
+
+        //textContent- return including space but excluding inside tag
+
+
+        var res5=document.getElementById('data').textContent;
+        console.log(res5);
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

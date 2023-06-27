@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .box_1 {
+            height: 400px;
+            width: 400px;
+            background-image: conic-gradient(orange, white, green);
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+
+        button {
+            padding: 5px 20px;
+            margin-left: 10px;
+            font-weight: bold;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <center>
+
+
+        <button onclick="Addclass()">Add Class</button>
+        <button onclick="Removeclass()">Remove Class</button>
+
+        <button onclick="HideShow()">Toogle Box</button>
+
+
+    </center>
+
+
+
+
+    <div class="box1" id="divbox"></div>
+
+
+
+
+
+    <script>
+
+        // classList
+
+
+        function Addclass() {
+            var a = document.getElementById('divbox').classList.add('box_1');
+            console.log(document.getElementById('divbox').className);
+            console.log(document.getElementById('divbox').classList);
+        }
+
+        function Removeclass() {
+
+            document.getElementById('divbox').classList.remove('box_1');
+        }
+
+
+        // hideshow
+
+        const HideShow = function () {
+
+            document.getElementById('divbox').classList.toggle('box_1');
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
