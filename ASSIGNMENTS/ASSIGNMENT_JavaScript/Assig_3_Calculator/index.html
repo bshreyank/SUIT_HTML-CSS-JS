@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+
+          <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+          <div class="container" style="background-color: burlywood;">
+
+
+          <div class="operations_buttons">
+                    <button id="addition">Addition</button>
+                    <button id="subtraction">Subtraction</button>
+                    <button id="multiplication">Multiplication</button>
+                    <button id="division">Division</button>
+                    <button id="mod">Mod</button>
+          </div>
+
+
+                    <div class="calculator">
+                              <input type="text" id="num1" placeholder="Enter 1st number" />
+                              <input type="text" id="num2" placeholder="Enter 2nd number" />
+                              <input type="submit" value="Calculate" onclick="calculate()" />
+                    </div>
+
+                    <div class="calculator">
+                        <input type="text" id="operations" placeholder="Operations" />
+                        <input type="text" id="answers" placeholder="Answer" />
+              </div>
+
+
+          </div> <!--container-->
+          <script src="script.js">
+            var a = window.history;
+cosnsole.log(a);
+          </script>
+</body>
+
+</html>
