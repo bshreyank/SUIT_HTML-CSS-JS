@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="goBack1()">GO BAck</button>
+    <button onclick="goForward1()">GO Forward</button>
+
+
+    <button onclick="GoTopage()">Go Directly</button>
+
+    <script>
+
+
+        // History
+
+
+        var a = window.history;
+        console.log(a);
+
+
+
+        function goBack1() {
+            history.back()
+            // alert("hi")
+
+        }
+
+        function goForward1() {
+            history.forward();
+            // alert("hi")
+        }
+
+
+        const GoTopage = () => {
+            history.go(-2);
+            history.go(2);
+        }
+
+
+
+
+
+
+
+
+        // ****************************************************************
+
+
+        var locat = window.location;
+        // console.log(locat);
+
+        console.log(locat.pathname)
+        console.log(locat.port);
+        console.log(locat.host)
+        console.log(locat.hostname)
+        console.log(locat.protocol);
+
+
+        // **********************************************************
+
+        let navigator = window.navigator;
+        console.log(navigator);
+
+        console.log(navigator.appCodeName)
+        console.log(navigator.appVersion)
+        console.log(navigator.cookieEnabled);//true
+
+
+
+        // ************************************************************
+
+        // screen
+
+        let result = window.screen;
+        console.log(result);
+
+        // like outer width
+        console.log("Screen Width: " + window.screen.availWidth);
+
+        // like outerHeight
+        console.log("Screen Height: " + window.screen.availHeight);
+        console.log("ColorDepth:  " + window.screen.colorDepth);
+        console.log("Pixel Depth s: " + window.screen.pixelDepth);
+
+
+
+
+
+
+    </script>
+
+
+    <noscript>Please Enable Javascript On your Browser !!</noscript>
+</body>
+
+</html>
