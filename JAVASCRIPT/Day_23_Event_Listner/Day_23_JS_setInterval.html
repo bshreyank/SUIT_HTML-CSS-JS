@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- setInterval -
+    
+    
+        executed function multiple times in specfic interval
+    -->
+
+
+
+
+    <img src="../Assets/natural.jpeg" alt="" height="300px" width="300px" id="img">
+    <br>
+    <hr>
+
+    <button onclick="StartInterval()">Start Interval</button>
+    <button onclick="StopInterval()">Stop Interval</button>
+    <script>
+
+
+        var x;
+        function StartInterval() {
+
+            console.log("hello A");
+            alert("Start Interval");
+            x = setInterval(demo, 5000);
+            console.log("Hello c");
+        }
+
+
+        let mar = 0;
+        function demo() {
+            // alert("hello");
+
+            console.log("hello b");
+            mar += 50;
+            document.getElementById('img').style.marginLeft = mar + "px";
+        }
+
+
+
+        // clearinterval
+
+
+        function StopInterval() {
+            alert("Stop Interval");
+            clearInterval(x);
+        }
+
+
+
+
+        // setInterval
+
+
+
+        // setInterval(() => {
+        //     alert("hello Alert")
+        // }, 2000);
+
+
+    </script>
+
+
+
+</body>
+
+</html>

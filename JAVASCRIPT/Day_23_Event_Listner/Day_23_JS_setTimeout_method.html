@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- setTimeOut-    only executed Once -->
+
+    <img src="../Assets/natural.jpeg" alt="" height="400px" width="400px" id="image">
+    <br><br>
+    <hr>
+
+    <button onclick="Start1()">Start setTimeOut</button>
+    <button onclick="Stop1()">Stop setTimeOut</button>
+
+
+
+
+
+    <script>
+
+
+
+        // var mar = 0;
+        // function demo() {
+        //     mar += 50;
+        //     document.getElementById('image').style.marginLeft = mar + "px";
+        // }
+
+        // setTimeout(demo, 3000);
+        // // setInterval(demo, 3000);
+
+
+
+
+        function demo() {
+            document.getElementById('image').style.borderRadius = "50%";
+        }
+
+
+        var x;
+        function Start1() {
+            alert("Start setTimeOut");
+            x = setTimeout(demo, 5000);
+        }
+
+
+
+        // clearTimeOut
+        function Stop1() {
+            alert("Stop SetTimeout");
+            clearTimeout(x);
+        }
+
+
+
+        // *************************************************************
+
+
+
+        // Clock Demo
+
+
+        // *****************************************************************
+        // Rest op.
+        // Spread op.
+        // Rest Parameter
+        // Array Destructuring
+        // Object Destructuring
+
+
+        // Higher Order function
+        // First class Citizen
+
+
+        // Hoisting
+
+
+
+    
+
+
+
+    </script>
+</body>
+
+</html>

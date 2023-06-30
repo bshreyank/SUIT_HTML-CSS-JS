@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- <button onclick="demo()">Click Here</button> -->
+
+
+    <button id="data">Click Here</button>
+
+
+    <button onclick="removeEvent()">Remove Event Listener</button>
+
+
+    <h1 id="getdate"></h1>
+
+
+    <script>
+
+        // addEventListener-
+
+
+        // Attached the event handler to HTML DOM such as html element or html tag or specfic element
+
+        // we can add multiple event handlers to one element
+        //You can add multiple event of same type to one element
+
+
+
+        // function demo()
+        // {
+        //     alert("Hello")
+        // }
+
+
+        //
+
+
+        document.getElementById('data').addEventListener('click', demo);
+        document.getElementById('data').addEventListener('click', demo2);
+
+        function demo() {
+            //code
+
+            alert("Date Successfully fetched !")
+            getdate.innerHTML = new Date().toLocaleString();
+
+        }
+
+
+        function demo2() {
+            alert("Called  Multiple Event Handler to The Same Element")
+        }
+
+
+
+        // document.getElementById('data').addEventListener('dblclick', function () {
+        //     alert("Hello AddEventListener");
+        // })
+
+
+
+        function removeEvent() {
+            alert("hello Remove");
+            document.getElementById('data').removeEventListener('click', demo);
+            document.getElementById('data').removeEventListener('click', demo2);
+        }
+        // document.getElementById('removedata').removeEventListener('click',demo2);
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
