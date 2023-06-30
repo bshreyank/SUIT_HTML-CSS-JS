@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Date Object -->
+
+
+    <script>
+
+        var a = Date();
+        console.log(a);
+
+
+        var b = new Date();
+        console.log(b);
+
+        //get Date
+        console.log(b.getFullYear());//2023
+        console.log(b.getMonth());// start from 0  and return 5
+
+        console.log(b.getDay());//start from 0  and return 4
+
+        console.log(b.getHours());//12
+        console.log(b.getMinutes());//20
+        console.log(b.getSeconds());//
+        console.log(b.getMilliseconds());//
+
+
+
+        //1 hr -60 min
+        //1min-  60
+
+        // 1hr- 3600 sec
+        //1hr -  360000000
+
+
+        //set
+
+        var c = new Date('June 28 2023 10:15:20');
+
+        console.log(c);
+        console.log(c.getFullYear());//2023
+        console.log(c.getMonth());//5
+        console.log(c.getDay());//3
+        console.log(c.getDate());//28
+
+
+
+        //set
+
+        var d = new Date();
+
+        d.setFullYear(2023);
+        d.setMonth(7);
+        d.setDate(10);
+        d.setHours(12);
+
+        // alert(d);
+        console.log(d);
+
+
+
+
+
+
+        //only fetch date either time
+
+
+
+
+
+        //
+
+        // return only Date
+        alert(new Date().toLocaleDateString());//
+
+
+        //only time
+
+        alert(new Date().toLocaleTimeString());//
+
+
+
+
+        // return only date 
+        alert(new Date().toDateString());
+
+        //Both Return Date And Time
+        alert(new Date().toLocaleString());//
+
+
+// **************************************************************************
+//Assignment-
+
+// Month validate
+
+
+// Assignment 2
+
+//12-16- Good Afternoon
+
+//16-24- Good Evening
+
+//24-4-  Good Night
+
+//4-12-  Good Morning
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
