@@ -1,17 +1,11 @@
-function getGreeting() {
-      const currentHour = new Date().getHours();
-    
-      if (currentHour >= 12 && currentHour < 16) {
-        return 'Good Afternoon';
-      } else if (currentHour >= 16 && currentHour < 24) {
-        return 'Good Evening';
-      } else if (currentHour >= 0 && currentHour < 4) {
-        return 'Good Night';
-      } else {
-        return 'Good Morning';
-      }
+var greetingElement = document.getElementById("greeting");
+
+var currentTime = new Date().getHours(); 
+
+    if (currentTime >= 6 && currentTime < 12) {
+      greetingElement.textContent = "Good Morning";
+    } else if (currentTime >= 12 && currentTime < 16) {
+      greetingElement.textContent = "Good Afternoon";
+    } else if (currentTime >= 16) {
+      greetingElement.textContent = "Good Evening";
     }
-    
-    const greeting = getGreeting();
-    console.log(greeting);
-    
