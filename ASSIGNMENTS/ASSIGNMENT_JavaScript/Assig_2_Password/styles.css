@@ -57,7 +57,7 @@
     
     /* ============================================================================= */
     
-    .calculator {
+    .type_result {
       width: 400px;
       margin: 20px auto;
       padding: 20px;
@@ -66,7 +66,7 @@
       background-color: #f9f9f9;
     }
     
-    .calculator input {
+    .type_result input {
       width: 100%;
       margin-bottom: 10px;
       padding: 5px;
@@ -75,11 +75,11 @@
       border-radius: 3px;
     }
     
-    .calculator input[type="text"] {
+    .type_result input[type="text"] {
       text-align: left;
     }
     
-    .calculator input[type="submit"] {
+    .type_result input[type="submit"] {
       background-color: #4caf50;
       color: #fff;
       border: none;
