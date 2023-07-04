@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  
+
+
+        60-70%
+
+
+
+        Hoisting
+
+        higher order function
+
+
+        first class citizen-  Arrow function,variable expression,anonymous function,,
+
+
+        Fat Arrow function
+
+        Rest parameter
+
+
+
+
+        Array destruturing
+        Object destruturing
+
+
+    -->
+
+
+    <script>
+
+        const arr = ["vaibhav", "Akash", "Akshay", "Sumit", "Saurbh"];
+        console.log(arr);
+        //Old Way
+
+        var name1 = arr[0];
+        var name2 = arr[1];
+        var name3 = arr[2];
+
+        // console.log(name1);
+        // console.log(name2);
+
+
+        //Modern Way
+        //Array Deastructuring
+
+        const[a1,a2,a3,a4,a5]=arr;
+    
+
+        // console.log(a1);
+        // console.log(a2);
+        // console.log(a4);
+        // console.log(a5);
+
+
+        // const [a1, , a2, a3, a4] = arr;
+        // console.log(a1);
+        // console.log(a2);
+
+
+        //store only first and last value
+
+        // const [user1, , , ,user2] = arr;
+
+        // console.log(user1);
+        // console.log(user2);
+
+        //only 3rd value
+
+        // const[,,x]=arr;
+        // console.log("3rd Value of Array "+x);
+
+
+
+        // *********************************************************************************************
+
+        //Object destructruring
+
+
+        const obj = {
+
+            fname: 'Pratik',
+            userage: 20,
+
+            skills: 'ReactJS',
+            emp_id: '#2310',
+
+        }
+
+        console.log(obj);
+
+        //old way
+        var name = obj.fname;
+        var age = obj.userage;
+
+        console.log(name);
+        console.log(age);
+
+
+
+        //Modern Way
+
+
+        // const{fname,userage}=obj;
+
+        // console.log(fname);
+        // console.log(userage);
+
+
+        //only fname and emp_id
+
+        const { fname, emp_id } = obj;
+
+        console.log(fname + " " + emp_id);
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

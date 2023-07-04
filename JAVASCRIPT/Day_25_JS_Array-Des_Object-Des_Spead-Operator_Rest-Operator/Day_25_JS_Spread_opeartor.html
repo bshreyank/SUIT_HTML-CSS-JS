@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Spread opeartor
+        //Allow to us iterate like an array
+        //work opposite to Rest parameter
+        //syntax same like rest parameter
+
+        // i.e.  Extract values from an Array
+
+
+
+        // Replace To-concat
+        //            Replace or update data
+        //            Apply 
+        //            assignn(copy)
+
+        // ...
+
+        // *****************************************************************************************
+
+        // function sum(a, b, c) {
+        //     return a + b + c;
+
+        // }
+
+        // //JS ingonres  extra values which passing in function call
+        // // console.log(sum(10,30,50,70,80));
+
+        // //solution rest parameter
+
+
+
+        // ************************************************************************8\
+
+        function sum(a, b, c) {
+            console.log(a + b + c);
+        }
+
+        // sum(20, 40, 100);
+
+        let arr = [10, 20, 40];
+
+        // sum(arr);
+
+        // sum.apply(null,arr);
+
+
+
+        // Replaced
+        sum(...arr);
+
+
+        // *********************************************************************************
+
+
+        const arr1 = ["A", "B", "C"];
+        const arr2 = ["D", "E", "F"];
+
+
+        console.log(arr2.concat(arr1));
+
+
+        //Replaced
+
+        // let res=[arr1,arr2,10,30,40];
+        // let res=[...arr1,...arr2];
+        let res = [...arr1, ...arr2, 10, 30, 40, [100, 30]];
+        console.log(res);
+
+
+
+
+
+
+
+
+
+        // *****************************************************************************
+
+        // replace or update data
+
+
+        let obj1 = {
+            fname: 'ABC',
+            lname: 'XYZ',
+            age: 25,
+        }
+
+
+        obj1.fname = "rohan";
+
+        console.log(obj1);
+
+
+
+        //modern way
+
+        let obj2 = { ...obj1, fname: 'Vaibhav' }
+        console.log(obj2);
+
+
+        let obj3 = { ...obj1, email: 'abc@gamil.com', age: 30 }
+        console.log(obj3);
+
+
+
+
+        // return Updated Value;
+        let obj4={...obj1,...obj2,...obj3}
+        console.log(obj4);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
