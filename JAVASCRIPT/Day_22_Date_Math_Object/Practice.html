@@ -7,8 +7,21 @@
 </head>
 <body>
       <script>
-            var a = Math;
-            console.log(a);
+            var a = Date();
+            console.log(a);   // Wed Jul 05 2023 15:43:11 GMT+0530 (India Standard Time)
+
+            var b = new Date();
+            console.log(b);   // Wed Jul 05 2023 15:43:11 GMT+0530 (India Standard Time)
+
+            var d = new Date();
+            d.setFullYear(2021);
+            console.log(d)
+
+            // return only Date
+        console.log(new Date().toLocaleDateString());
+            //only time
+        console.log(new Date().toLocaleTimeString());
+
       </script>
 </body>
 </html>
