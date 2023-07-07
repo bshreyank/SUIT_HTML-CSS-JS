@@ -3,7 +3,7 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Budget_Tracking_App</title>
 
       <link rel="stylesheet" href="./styles.css">
 </head>
@@ -11,37 +11,37 @@
       <div class="container">
             <div class="lineOne">
                   <span class="cred_Debt_Wallet">
-                        <label for="">Credit ==></label> 
-                        <input type="number">
+                        <label for="numberInput">Credit ==></label> 
+                        <input type="number" id="numberInput">
                   </span>
                   <span class="cred_Debt_Wallet">
                         <label for="">Debit ==></label>
-                        <input type="number">
+                        <input type="number" id="">
                   </span>
                   <span class="cred_Debt_Wallet">
                         <label for="">Wallet ==></label> 
-                        <input type="number">
+                        <input type="number" id="">
                   </span>
             </div>
 
             <div class="lineTwo">
-                  <button>ADD BALANCE</button>
-                  <button>DEBIT</button>
+                  <button onclick="displayNumber()">ADD BALANCE</button>
+                  <button onclick="displayNumber()">DEBIT</button>
             </div>
 
             <div class="DisplayBox">
                  <table border="1" height="70px" width="100%" cellspacing="0" cellpadding="5">
                   <tr >
-                        <td>SR.NO</td>
-                        <td>Credit</td>
-                        <td>Debit</td>
-                        <td>Balance</td>
+                        <th>SR.NO</th>
+                        <th>Credit</th>
+                        <th>Debit</th>
+                        <th>Balance</th>
                   </tr>
                   <tr>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td id="sr_no">0</td>
+                        <td id="numberCell">0</td>
+                        <td id="numberCell">0</td>
+                        <td id="numberCell">0</td>
                   </tr>
 
       

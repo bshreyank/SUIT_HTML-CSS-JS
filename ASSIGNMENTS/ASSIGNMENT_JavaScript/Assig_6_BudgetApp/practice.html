@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Input</title>
+
+  <script>
+    function displayNumber() {
+      var inputNumber = document.getElementById("numberInput").value;
+      var tableData = document.getElementById("numberCell");
+      
+      tableData.innerText = inputNumber;
+    }
+  </script>
+</head>
+
+
+<body>
+  <h1>Number Input Example</h1>
+  
+  <label for="numberInput">Enter a Number:</label>
+  <input type="number" id="numberInput">
+  <button onclick="displayNumber()">Display</button>
+  
+  <table>
+    <tr>
+      <th>Number</th>
+    </tr>
+    <tr>
+      <td id="numberCell"></td>
+      <td id="numberCell"></td>
+    </tr>
+  </table>
+</body>
+</html>
+<!-- /////////////////////////////////////// Over -->
