@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Budget_Tracking_App</title>
+      <title>Budget App</title>
 
       <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
       <div class="container">
+            <h1 style="text-align: center;">Budget App</h1>
             <div class="lineOne">
-                  <span class="cred_Debt_Wallet">
-                        <label for="numberInput">Credit ==></label> 
-                        <input type="number" id="numberInput">
+                  <span>
+                        <label for="creditInput">Credit Amount:</label>
+                        <input type="number" id="creditInput">
+                        <button onclick="updateBalance()">Credit</button>
                   </span>
-                  <span class="cred_Debt_Wallet">
-                        <label for="">Debit ==></label>
-                        <input type="number" id="">
-                  </span>
-                  <span class="cred_Debt_Wallet">
-                        <label for="">Wallet ==></label> 
-                        <input type="number" id="">
-                  </span>
+                  <br><br>
+
+                  <label for="debitInput">Debit Amount:</label>
+                  <input type="number" id="debitInput">
+                  <button onclick="updateBalance()">Debit</button>
+
+                  <br><br>
+
+                  <label for="balanceInput">Wallet Balance:</label>
+                  <input type="text" id="balanceInput" readonly>
+
+                  <br><br>
             </div>
 
             <div class="lineTwo">
-                  <button onclick="displayNumber()">ADD BALANCE</button>
-                  <button onclick="displayNumber()">DEBIT</button>
-            </div>
-
-            <div class="DisplayBox">
-                 <table border="1" height="70px" width="100%" cellspacing="0" cellpadding="5">
-                  <tr >
-                        <th>SR.NO</th>
-                        <th>Credit</th>
-                        <th>Debit</th>
-                        <th>Balance</th>
-                  </tr>
-                  <tr>
-                        <td id="sr_no">0</td>
-                        <td id="numberCell">0</td>
-                        <td id="numberCell">0</td>
-                        <td id="numberCell">0</td>
-                  </tr>
-
-      
+                  <table id="historyTable">
+                        <tr>
+                              <th>Sr. No</th>
+                              <th>Credit</th>
+                              <th>Debit</th>
+                              <th>Balance</th>
+                        </tr>
                   </table>
+
             </div>
+
       </div>
-
-
       <script src="./script.js"></script>
 </body>
+
 </html>
