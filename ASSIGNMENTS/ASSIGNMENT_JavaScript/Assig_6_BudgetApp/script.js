@@ -1,11 +1,4 @@
-// function displayNumber() {
-//       var inputNumber = document.getElementById("numberInput").value;
-//       var tableData = document.getElementById("numberCell");
-      
-//       tableData.innerText = inputNumber;
-//     }
-
-var balance = 0;
+    var balance = 0;
     var transactionCount = 1;
     
     function updateBalance() {
@@ -23,6 +16,10 @@ var balance = 0;
       document.getElementById("balanceInput").value = balance.toFixed(2);
       
       addTransactionToHistory(creditAmount, debitAmount, balance.toFixed(2));
+      
+      // Clear input fields after updating balance
+      document.getElementById("creditInput").value = "";
+      document.getElementById("debitInput").value = "";
     }
     
     function addTransactionToHistory(creditAmount, debitAmount, balance) {
@@ -34,7 +31,10 @@ var balance = 0;
       var balanceCell = row.insertCell(3);
       
       srNoCell.textContent = transactionCount++;
-      creditCell.textContent = creditAmount.toFixed(2);
-      debitCell.textContent = debitAmount.toFixed(2);
+      creditCell.textContent = !isNaN(creditAmount) ? creditAmount.toFixed(2) : "-";
+      debitCell.textContent = !isNaN(debitAmount) ? debitAmount.toFixed(2) : "-";
       balanceCell.textContent = balance;
     }
+
+
+    
